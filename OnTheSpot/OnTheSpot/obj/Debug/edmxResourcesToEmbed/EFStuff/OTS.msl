@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Store1ModelStoreContainer" CdmEntityContainer="Store1Entities">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="Store1Model.Customer">
+        <MappingFragment StoreEntitySet="Customers">
+          <ScalarProperty Name="NoTotalsOnFirstCopy" ColumnName="NoTotalsOnFirstCopy" />
+          <ScalarProperty Name="NoPricesOnFirstCopy" ColumnName="NoPricesOnFirstCopy" />
+          <ScalarProperty Name="PrintInvoiceTotals" ColumnName="PrintInvoiceTotals" />
+          <ScalarProperty Name="PrintInvoicePrices" ColumnName="PrintInvoicePrices" />
+          <ScalarProperty Name="InvoiceCopies" ColumnName="InvoiceCopies" />
+          <ScalarProperty Name="Notes" ColumnName="Notes" />
+          <ScalarProperty Name="BillZip" ColumnName="BillZip" />
+          <ScalarProperty Name="BillState" ColumnName="BillState" />
+          <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+          <ScalarProperty Name="BillAddr2" ColumnName="BillAddr2" />
+          <ScalarProperty Name="BillAddr1" ColumnName="BillAddr1" />
+          <ScalarProperty Name="BillFirstName" ColumnName="BillFirstName" />
+          <ScalarProperty Name="BillLastName" ColumnName="BillLastName" />
+          <ScalarProperty Name="DiscExpiration" ColumnName="DiscExpiration" />
+          <ScalarProperty Name="RouteEmail" ColumnName="RouteEmail" />
+          <ScalarProperty Name="PromoEmail" ColumnName="PromoEmail" />
+          <ScalarProperty Name="StatementEmail" ColumnName="StatementEmail" />
+          <ScalarProperty Name="ReadyEmail" ColumnName="ReadyEmail" />
+          <ScalarProperty Name="RequestsNoEmail" ColumnName="RequestsNoEmail" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Addr1" ColumnName="Addr1" />
+          <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Zip" ColumnName="Zip" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+          <ScalarProperty Name="IsVIP" ColumnName="IsVIP" />
+          <ScalarProperty Name="FccMember" ColumnName="FccMember" />
+          <ScalarProperty Name="FccPoints" ColumnName="FccPoints" />
+          <ScalarProperty Name="NoChecks" ColumnName="NoChecks" />
+          <ScalarProperty Name="CanBill" ColumnName="CanBill" />
+          <ScalarProperty Name="ReportCode" ColumnName="ReportCode" />
+          <ScalarProperty Name="IsTaxExempt" ColumnName="IsTaxExempt" />
+          <ScalarProperty Name="Starch" ColumnName="Starch" />
+          <ScalarProperty Name="Package" ColumnName="Package" />
+          <ScalarProperty Name="InvReminder" ColumnName="InvReminder" />
+          <ScalarProperty Name="OpenDate" ColumnName="OpenDate" />
+          <ScalarProperty Name="LastOrder" ColumnName="LastOrder" />
+          <ScalarProperty Name="LastCashout" ColumnName="LastCashout" />
+          <ScalarProperty Name="BillCycleID" ColumnName="BillCycleID" />
+          <ScalarProperty Name="CashReminder" ColumnName="CashReminder" />
+          <ScalarProperty Name="AutoDiscount1ID" ColumnName="AutoDiscount1ID" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="BillToOffice" ColumnName="BillToOffice" />
+          <ScalarProperty Name="SOFCardNo" ColumnName="SOFCardNo" />
+          <ScalarProperty Name="SOFExpDate" ColumnName="SOFExpDate" />
+          <ScalarProperty Name="SOFInStore" ColumnName="SOFInStore" />
+          <ScalarProperty Name="SOFBatch" ColumnName="SOFBatch" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="NoHeatseals" ColumnName="NoHeatseals" />
+          <ScalarProperty Name="IsFinCharged" ColumnName="IsFinCharged" />
+          <ScalarProperty Name="ExtraAccount" ColumnName="ExtraAccount" />
+          <ScalarProperty Name="BillCenterID" ColumnName="BillCenterID" />
+          <ScalarProperty Name="CreditLimit" ColumnName="CreditLimit" />
+          <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+          <ScalarProperty Name="IsPrintName" ColumnName="IsPrintName" />
+          <ScalarProperty Name="IsHotel" ColumnName="IsHotel" />
+          <ScalarProperty Name="PrintIReminder" ColumnName="PrintIReminder" />
+          <ScalarProperty Name="PrintPackingList" ColumnName="PrintPackingList" />
+          <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+          <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+          <ScalarProperty Name="IsCompany" ColumnName="IsCompany" />
+          <ScalarProperty Name="DLNumber" ColumnName="DLNumber" />
+          <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+          <ScalarProperty Name="Language" ColumnName="Language" />
+          <ScalarProperty Name="CoupCount" ColumnName="CoupCount" />
+          <ScalarProperty Name="Designation" ColumnName="Designation" />
+          <ScalarProperty Name="LoyaltyID" ColumnName="LoyaltyID" />
+          <ScalarProperty Name="TaxAuthorityID" ColumnName="TaxAuthorityID" />
+          <ScalarProperty Name="InvoicePrintID" ColumnName="InvoicePrintID" />
+          <ScalarProperty Name="NoEmailPromos" ColumnName="NoEmailPromos" />
+          <ScalarProperty Name="KioskCannotReplaceCard" ColumnName="KioskCannotReplaceCard" />
+          <ScalarProperty Name="EmailStatements" ColumnName="EmailStatements" />
+          <ScalarProperty Name="PrintStatements" ColumnName="PrintStatements" />
+          <ScalarProperty Name="SMSAddress" ColumnName="SMSAddress" />
+          <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+          <ScalarProperty Name="PriceLevel" ColumnName="PriceLevel" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Orders">
+      <EntityTypeMapping TypeName="Store1Model.Order">
+        <MappingFragment StoreEntitySet="Orders">
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="IsFulFilled" ColumnName="IsFulFilled" />
+          <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employees">
+      <EntityTypeMapping TypeName="Store1Model.Employee">
+        <MappingFragment StoreEntitySet="Employees">
+          <ScalarProperty Name="CanRemoveGarmentsOnEdit" ColumnName="CanRemoveGarmentsOnEdit" />
+          <ScalarProperty Name="CanAddGarmentsOnEdit" ColumnName="CanAddGarmentsOnEdit" />
+          <ScalarProperty Name="CannotViewLocations" ColumnName="CannotViewLocations" />
+          <ScalarProperty Name="EarliestClockin" ColumnName="EarliestClockin" />
+          <ScalarProperty Name="CanVoidGiftTransactions" ColumnName="CanVoidGiftTransactions" />
+          <ScalarProperty Name="CanReloadPurchaseCards" ColumnName="CanReloadPurchaseCards" />
+          <ScalarProperty Name="CanReloadAwardCards" ColumnName="CanReloadAwardCards" />
+          <ScalarProperty Name="CanIssueAwardCards" ColumnName="CanIssueAwardCards" />
+          <ScalarProperty Name="CanViewCustActivity" ColumnName="CanViewCustActivity" />
+          <ScalarProperty Name="CanEditCustInvoiceSettings" ColumnName="CanEditCustInvoiceSettings" />
+          <ScalarProperty Name="CanEditLoyaltyPts" ColumnName="CanEditLoyaltyPts" />
+          <ScalarProperty Name="CanSendACustomerEmail" ColumnName="CanSendACustomerEmail" />
+          <ScalarProperty Name="CanEditCustEmail" ColumnName="CanEditCustEmail" />
+          <ScalarProperty Name="CanDeleteCustomers" ColumnName="CanDeleteCustomers" />
+          <ScalarProperty Name="LockDate" ColumnName="LockDate" />
+          <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+          <ScalarProperty Name="IsWinUser" ColumnName="IsWinUser" />
+          <ScalarProperty Name="Domain" ColumnName="Domain" />
+          <ScalarProperty Name="LastReset" ColumnName="LastReset" />
+          <ScalarProperty Name="SecretAnswer" ColumnName="SecretAnswer" />
+          <ScalarProperty Name="SecretQuestion" ColumnName="SecretQuestion" />
+          <ScalarProperty Name="UserSalt" ColumnName="UserSalt" />
+          <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+          <ScalarProperty Name="UserPIN" ColumnName="UserPIN" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="CanIssueVoidCCDebitsCredits" ColumnName="CanIssueVoidCCDebitsCredits" />
+          <ScalarProperty Name="CanMPSBrowse" ColumnName="CanMPSBrowse" />
+          <ScalarProperty Name="CanEditCCOnFile" ColumnName="CanEditCCOnFile" />
+          <ScalarProperty Name="CanSelectPLevelsEditing" ColumnName="CanSelectPLevelsEditing" />
+          <ScalarProperty Name="CanSelectPLevelsInvoicing" ColumnName="CanSelectPLevelsInvoicing" />
+          <ScalarProperty Name="CanAssignCustPLevels" ColumnName="CanAssignCustPLevels" />
+          <ScalarProperty Name="CanAddRemoveGarmentsOnEdit" ColumnName="CanAddRemoveGarmentsOnEdit" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="CanInventoryBillOut" ColumnName="CanInventoryBillOut" />
+          <ScalarProperty Name="EditCustCheckWrite" ColumnName="EditCustCheckWrite" />
+          <ScalarProperty Name="EditCustSalesTax" ColumnName="EditCustSalesTax" />
+          <ScalarProperty Name="CanLowerPricesOnEdit" ColumnName="CanLowerPricesOnEdit" />
+          <ScalarProperty Name="CannotSetupEmail" ColumnName="CannotSetupEmail" />
+          <ScalarProperty Name="CannotDoPhysical" ColumnName="CannotDoPhysical" />
+          <ScalarProperty Name="EmpTimeOut" ColumnName="EmpTimeOut" />
+          <ScalarProperty Name="CannotPrintDrawers" ColumnName="CannotPrintDrawers" />
+          <ScalarProperty Name="CannotPrintTracking" ColumnName="CannotPrintTracking" />
+          <ScalarProperty Name="CannotPrintFinancials" ColumnName="CannotPrintFinancials" />
+          <ScalarProperty Name="CannotPrintSales" ColumnName="CannotPrintSales" />
+          <ScalarProperty Name="CannotPrintEmpLog" ColumnName="CannotPrintEmpLog" />
+          <ScalarProperty Name="CannotPrintManagerRpts" ColumnName="CannotPrintManagerRpts" />
+          <ScalarProperty Name="CannotEditMerchandise" ColumnName="CannotEditMerchandise" />
+          <ScalarProperty Name="CannotEditDiscountsFees" ColumnName="CannotEditDiscountsFees" />
+          <ScalarProperty Name="CannotEditUpcharges" ColumnName="CannotEditUpcharges" />
+          <ScalarProperty Name="CannotEditGarments" ColumnName="CannotEditGarments" />
+          <ScalarProperty Name="CannotEditCategories" ColumnName="CannotEditCategories" />
+          <ScalarProperty Name="CannotEditDepartments" ColumnName="CannotEditDepartments" />
+          <ScalarProperty Name="CannotEditPriceList" ColumnName="CannotEditPriceList" />
+          <ScalarProperty Name="CannotEditEmpCashDrawer" ColumnName="CannotEditEmpCashDrawer" />
+          <ScalarProperty Name="CannotEditEmpAccess" ColumnName="CannotEditEmpAccess" />
+          <ScalarProperty Name="CannotEditTimeCards" ColumnName="CannotEditTimeCards" />
+          <ScalarProperty Name="CannotDeleteEmployees" ColumnName="CannotDeleteEmployees" />
+          <ScalarProperty Name="CannotEditEmployees" ColumnName="CannotEditEmployees" />
+          <ScalarProperty Name="CanEditInvoices" ColumnName="CanEditInvoices" />
+          <ScalarProperty Name="CannotViewTimeCard" ColumnName="CannotViewTimeCard" />
+          <ScalarProperty Name="CannotAddCash" ColumnName="CannotAddCash" />
+          <ScalarProperty Name="CannotDisburseCash" ColumnName="CannotDisburseCash" />
+          <ScalarProperty Name="CannotCashCheck" ColumnName="CannotCashCheck" />
+          <ScalarProperty Name="CannotMakeChange" ColumnName="CannotMakeChange" />
+          <ScalarProperty Name="CannotPrintDrawer" ColumnName="CannotPrintDrawer" />
+          <ScalarProperty Name="CanPrintDailyReport" ColumnName="CanPrintDailyReport" />
+          <ScalarProperty Name="CanAdjustAccounts" ColumnName="CanAdjustAccounts" />
+          <ScalarProperty Name="CannotPrintAudit" ColumnName="CannotPrintAudit" />
+          <ScalarProperty Name="CannotCloseDrawers" ColumnName="CannotCloseDrawers" />
+          <ScalarProperty Name="NoCouponAdj" ColumnName="NoCouponAdj" />
+          <ScalarProperty Name="CanCloseDay" ColumnName="CanCloseDay" />
+          <ScalarProperty Name="CanVoidInvoices" ColumnName="CanVoidInvoices" />
+          <ScalarProperty Name="EditCustDisc" ColumnName="EditCustDisc" />
+          <ScalarProperty Name="PieceRateDryclean" ColumnName="PieceRateDryclean" />
+          <ScalarProperty Name="PieceRateLaundry" ColumnName="PieceRateLaundry" />
+          <ScalarProperty Name="PieceRate" ColumnName="PieceRate" />
+          <ScalarProperty Name="LogTransactions" ColumnName="LogTransactions" />
+          <ScalarProperty Name="CashOutAccounts" ColumnName="CashOutAccounts" />
+          <ScalarProperty Name="EditCustAccData" ColumnName="EditCustAccData" />
+          <ScalarProperty Name="EditInvoicePrices" ColumnName="EditInvoicePrices" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="DrawerNumber" ColumnName="DrawerNumber" />
+          <ScalarProperty Name="SecurityLevel" ColumnName="SecurityLevel" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="LastRaise" ColumnName="LastRaise" />
+          <ScalarProperty Name="FullTime" ColumnName="FullTime" />
+          <ScalarProperty Name="SalaryRate" ColumnName="SalaryRate" />
+          <ScalarProperty Name="NoDrawer" ColumnName="NoDrawer" />
+          <ScalarProperty Name="DeniedAccess" ColumnName="DeniedAccess" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="ClocksIn" ColumnName="ClocksIn" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="DrawerStation" ColumnName="DrawerStation" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

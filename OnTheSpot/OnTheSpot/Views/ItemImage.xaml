@@ -1,0 +1,8 @@
+﻿<Window x:Class="OnTheSpot.Views.ItemImage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ItemImage" Height="300" Width="300">
+    <Grid>
+        <Image x:Name="ItemImg"   HorizontalAlignment="Left" Height="300"  VerticalAlignment="Top" Width="300"/>
+    </Grid>
+</Window>

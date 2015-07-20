@@ -1,0 +1,28 @@
+C:\BCS - Copy\WpfApplication1\Led\bin\Release\Led.dll
+C:\BCS - Copy\WpfApplication1\Led\bin\Release\Led.pdb
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\ResolveAssemblyReference.cache
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led.g.cs
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led_MarkupCompile.cache
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led_MarkupCompile.lref
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led.baml
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led.g.resources
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led.Properties.Resources.resources
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\GenerateResource.read.1.tlog
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\GenerateResource.write.1.tlog
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led.dll
+C:\BCS - Copy\WpfApplication1\Led\obj\Release\Led.pdb
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\bin\Release\Led.dll
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\bin\Release\Led.pdb
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led.g.cs
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led_MarkupCompile.cache
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led_MarkupCompile.lref
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led.baml
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led.g.resources
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led.Properties.Resources.resources
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led.dll
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Release\Led.pdb

@@ -1,0 +1,523 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Store1Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="Store1ModelStoreContainer">
+    <EntitySet Name="Customers" EntityType="Store1Model.Store.Customers" store:Type="Tables" store:Schema="dbo" store:Name="Customers">
+      <DefiningQuery>SELECT 
+      [Customers].[CustomerID] AS [CustomerID], 
+      [Customers].[StoreID] AS [StoreID], 
+      [Customers].[LastName] AS [LastName], 
+      [Customers].[FirstName] AS [FirstName], 
+      [Customers].[Addr1] AS [Addr1], 
+      [Customers].[Addr2] AS [Addr2], 
+      [Customers].[City] AS [City], 
+      [Customers].[State] AS [State], 
+      [Customers].[Zip] AS [Zip], 
+      [Customers].[HomePhone] AS [HomePhone], 
+      [Customers].[WorkPhone] AS [WorkPhone], 
+      [Customers].[Comment] AS [Comment], 
+      [Customers].[IsVIP] AS [IsVIP], 
+      [Customers].[FccMember] AS [FccMember], 
+      [Customers].[FccPoints] AS [FccPoints], 
+      [Customers].[NoChecks] AS [NoChecks], 
+      [Customers].[CanBill] AS [CanBill], 
+      [Customers].[ReportCode] AS [ReportCode], 
+      [Customers].[IsTaxExempt] AS [IsTaxExempt], 
+      [Customers].[Starch] AS [Starch], 
+      [Customers].[Package] AS [Package], 
+      [Customers].[InvReminder] AS [InvReminder], 
+      [Customers].[OpenDate] AS [OpenDate], 
+      [Customers].[LastOrder] AS [LastOrder], 
+      [Customers].[LastCashout] AS [LastCashout], 
+      [Customers].[BillCycleID] AS [BillCycleID], 
+      [Customers].[CashReminder] AS [CashReminder], 
+      [Customers].[AutoDiscount1ID] AS [AutoDiscount1ID], 
+      [Customers].[Deleted] AS [Deleted], 
+      [Customers].[BillToOffice] AS [BillToOffice], 
+      [Customers].[SOFCardNo] AS [SOFCardNo], 
+      [Customers].[SOFExpDate] AS [SOFExpDate], 
+      [Customers].[SOFInStore] AS [SOFInStore], 
+      [Customers].[SOFBatch] AS [SOFBatch], 
+      [Customers].[EMail] AS [EMail], 
+      [Customers].[NoHeatseals] AS [NoHeatseals], 
+      [Customers].[IsFinCharged] AS [IsFinCharged], 
+      [Customers].[ExtraAccount] AS [ExtraAccount], 
+      [Customers].[BillCenterID] AS [BillCenterID], 
+      [Customers].[CreditLimit] AS [CreditLimit], 
+      [Customers].[PriceListID] AS [PriceListID], 
+      [Customers].[IsPrintName] AS [IsPrintName], 
+      [Customers].[IsHotel] AS [IsHotel], 
+      [Customers].[PrintIReminder] AS [PrintIReminder], 
+      [Customers].[PrintPackingList] AS [PrintPackingList], 
+      [Customers].[CellPhone] AS [CellPhone], 
+      [Customers].[CompanyName] AS [CompanyName], 
+      [Customers].[IsCompany] AS [IsCompany], 
+      [Customers].[DLNumber] AS [DLNumber], 
+      [Customers].[Birthday] AS [Birthday], 
+      [Customers].[Language] AS [Language], 
+      [Customers].[CoupCount] AS [CoupCount], 
+      [Customers].[Designation] AS [Designation], 
+      [Customers].[LoyaltyID] AS [LoyaltyID], 
+      [Customers].[TaxAuthorityID] AS [TaxAuthorityID], 
+      [Customers].[InvoicePrintID] AS [InvoicePrintID], 
+      [Customers].[NoEmailPromos] AS [NoEmailPromos], 
+      [Customers].[KioskCannotReplaceCard] AS [KioskCannotReplaceCard], 
+      [Customers].[EmailStatements] AS [EmailStatements], 
+      [Customers].[PrintStatements] AS [PrintStatements], 
+      [Customers].[SMSAddress] AS [SMSAddress], 
+      [Customers].[AccountType] AS [AccountType], 
+      [Customers].[PriceLevel] AS [PriceLevel], 
+      [Customers].[RequestsNoEmail] AS [RequestsNoEmail], 
+      [Customers].[ReadyEmail] AS [ReadyEmail], 
+      [Customers].[StatementEmail] AS [StatementEmail], 
+      [Customers].[PromoEmail] AS [PromoEmail], 
+      [Customers].[RouteEmail] AS [RouteEmail], 
+      [Customers].[DiscExpiration] AS [DiscExpiration], 
+      [Customers].[BillLastName] AS [BillLastName], 
+      [Customers].[BillFirstName] AS [BillFirstName], 
+      [Customers].[BillAddr1] AS [BillAddr1], 
+      [Customers].[BillAddr2] AS [BillAddr2], 
+      [Customers].[BillCity] AS [BillCity], 
+      [Customers].[BillState] AS [BillState], 
+      [Customers].[BillZip] AS [BillZip], 
+      [Customers].[Notes] AS [Notes], 
+      [Customers].[InvoiceCopies] AS [InvoiceCopies], 
+      [Customers].[PrintInvoicePrices] AS [PrintInvoicePrices], 
+      [Customers].[PrintInvoiceTotals] AS [PrintInvoiceTotals], 
+      [Customers].[NoPricesOnFirstCopy] AS [NoPricesOnFirstCopy], 
+      [Customers].[NoTotalsOnFirstCopy] AS [NoTotalsOnFirstCopy]
+      FROM [dbo].[Customers] AS [Customers]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Employees" EntityType="Store1Model.Store.Employees" store:Type="Tables" store:Schema="dbo" store:Name="Employees">
+      <DefiningQuery>SELECT 
+      [Employees].[EmployeeID] AS [EmployeeID], 
+      [Employees].[DrawerStation] AS [DrawerStation], 
+      [Employees].[LastName] AS [LastName], 
+      [Employees].[FirstName] AS [FirstName], 
+      [Employees].[ClocksIn] AS [ClocksIn], 
+      [Employees].[Password] AS [Password], 
+      [Employees].[DeniedAccess] AS [DeniedAccess], 
+      [Employees].[NoDrawer] AS [NoDrawer], 
+      [Employees].[SalaryRate] AS [SalaryRate], 
+      [Employees].[FullTime] AS [FullTime], 
+      [Employees].[LastRaise] AS [LastRaise], 
+      [Employees].[Department] AS [Department], 
+      [Employees].[SecurityLevel] AS [SecurityLevel], 
+      [Employees].[DrawerNumber] AS [DrawerNumber], 
+      [Employees].[Deleted] AS [Deleted], 
+      [Employees].[EditInvoicePrices] AS [EditInvoicePrices], 
+      [Employees].[EditCustAccData] AS [EditCustAccData], 
+      [Employees].[CashOutAccounts] AS [CashOutAccounts], 
+      [Employees].[LogTransactions] AS [LogTransactions], 
+      [Employees].[PieceRate] AS [PieceRate], 
+      [Employees].[PieceRateLaundry] AS [PieceRateLaundry], 
+      [Employees].[PieceRateDryclean] AS [PieceRateDryclean], 
+      [Employees].[EditCustDisc] AS [EditCustDisc], 
+      [Employees].[CanVoidInvoices] AS [CanVoidInvoices], 
+      [Employees].[CanCloseDay] AS [CanCloseDay], 
+      [Employees].[NoCouponAdj] AS [NoCouponAdj], 
+      [Employees].[CannotCloseDrawers] AS [CannotCloseDrawers], 
+      [Employees].[CannotPrintAudit] AS [CannotPrintAudit], 
+      [Employees].[CanAdjustAccounts] AS [CanAdjustAccounts], 
+      [Employees].[CanPrintDailyReport] AS [CanPrintDailyReport], 
+      [Employees].[CannotPrintDrawer] AS [CannotPrintDrawer], 
+      [Employees].[CannotMakeChange] AS [CannotMakeChange], 
+      [Employees].[CannotCashCheck] AS [CannotCashCheck], 
+      [Employees].[CannotDisburseCash] AS [CannotDisburseCash], 
+      [Employees].[CannotAddCash] AS [CannotAddCash], 
+      [Employees].[CannotViewTimeCard] AS [CannotViewTimeCard], 
+      [Employees].[CanEditInvoices] AS [CanEditInvoices], 
+      [Employees].[CannotEditEmployees] AS [CannotEditEmployees], 
+      [Employees].[CannotDeleteEmployees] AS [CannotDeleteEmployees], 
+      [Employees].[CannotEditTimeCards] AS [CannotEditTimeCards], 
+      [Employees].[CannotEditEmpAccess] AS [CannotEditEmpAccess], 
+      [Employees].[CannotEditEmpCashDrawer] AS [CannotEditEmpCashDrawer], 
+      [Employees].[CannotEditPriceList] AS [CannotEditPriceList], 
+      [Employees].[CannotEditDepartments] AS [CannotEditDepartments], 
+      [Employees].[CannotEditCategories] AS [CannotEditCategories], 
+      [Employees].[CannotEditGarments] AS [CannotEditGarments], 
+      [Employees].[CannotEditUpcharges] AS [CannotEditUpcharges], 
+      [Employees].[CannotEditDiscountsFees] AS [CannotEditDiscountsFees], 
+      [Employees].[CannotEditMerchandise] AS [CannotEditMerchandise], 
+      [Employees].[CannotPrintManagerRpts] AS [CannotPrintManagerRpts], 
+      [Employees].[CannotPrintEmpLog] AS [CannotPrintEmpLog], 
+      [Employees].[CannotPrintSales] AS [CannotPrintSales], 
+      [Employees].[CannotPrintFinancials] AS [CannotPrintFinancials], 
+      [Employees].[CannotPrintTracking] AS [CannotPrintTracking], 
+      [Employees].[CannotPrintDrawers] AS [CannotPrintDrawers], 
+      [Employees].[EmpTimeOut] AS [EmpTimeOut], 
+      [Employees].[CannotDoPhysical] AS [CannotDoPhysical], 
+      [Employees].[CannotSetupEmail] AS [CannotSetupEmail], 
+      [Employees].[CanLowerPricesOnEdit] AS [CanLowerPricesOnEdit], 
+      [Employees].[EditCustSalesTax] AS [EditCustSalesTax], 
+      [Employees].[EditCustCheckWrite] AS [EditCustCheckWrite], 
+      [Employees].[CanInventoryBillOut] AS [CanInventoryBillOut], 
+      [Employees].[Email] AS [Email], 
+      [Employees].[CanAddRemoveGarmentsOnEdit] AS [CanAddRemoveGarmentsOnEdit], 
+      [Employees].[CanAssignCustPLevels] AS [CanAssignCustPLevels], 
+      [Employees].[CanSelectPLevelsInvoicing] AS [CanSelectPLevelsInvoicing], 
+      [Employees].[CanSelectPLevelsEditing] AS [CanSelectPLevelsEditing], 
+      [Employees].[CanEditCCOnFile] AS [CanEditCCOnFile], 
+      [Employees].[CanMPSBrowse] AS [CanMPSBrowse], 
+      [Employees].[CanIssueVoidCCDebitsCredits] AS [CanIssueVoidCCDebitsCredits], 
+      [Employees].[UserName] AS [UserName], 
+      [Employees].[UserPIN] AS [UserPIN], 
+      [Employees].[UserPassword] AS [UserPassword], 
+      [Employees].[UserSalt] AS [UserSalt], 
+      [Employees].[SecretQuestion] AS [SecretQuestion], 
+      [Employees].[SecretAnswer] AS [SecretAnswer], 
+      [Employees].[LastReset] AS [LastReset], 
+      [Employees].[Domain] AS [Domain], 
+      [Employees].[IsWinUser] AS [IsWinUser], 
+      [Employees].[IsLocked] AS [IsLocked], 
+      [Employees].[LockDate] AS [LockDate], 
+      [Employees].[CanDeleteCustomers] AS [CanDeleteCustomers], 
+      [Employees].[CanEditCustEmail] AS [CanEditCustEmail], 
+      [Employees].[CanSendACustomerEmail] AS [CanSendACustomerEmail], 
+      [Employees].[CanEditLoyaltyPts] AS [CanEditLoyaltyPts], 
+      [Employees].[CanEditCustInvoiceSettings] AS [CanEditCustInvoiceSettings], 
+      [Employees].[CanViewCustActivity] AS [CanViewCustActivity], 
+      [Employees].[CanIssueAwardCards] AS [CanIssueAwardCards], 
+      [Employees].[CanReloadAwardCards] AS [CanReloadAwardCards], 
+      [Employees].[CanReloadPurchaseCards] AS [CanReloadPurchaseCards], 
+      [Employees].[CanVoidGiftTransactions] AS [CanVoidGiftTransactions], 
+      [Employees].[EarliestClockin] AS [EarliestClockin], 
+      [Employees].[CannotViewLocations] AS [CannotViewLocations], 
+      [Employees].[CanAddGarmentsOnEdit] AS [CanAddGarmentsOnEdit], 
+      [Employees].[CanRemoveGarmentsOnEdit] AS [CanRemoveGarmentsOnEdit]
+      FROM [dbo].[Employees] AS [Employees]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Orders" EntityType="Store1Model.Store.Orders" store:Type="Tables" store:Schema="dbo" store:Name="Orders">
+      <DefiningQuery>SELECT 
+      [Orders].[OrderID] AS [OrderID], 
+      [Orders].[StoreID] AS [StoreID], 
+      [Orders].[CustomerID] AS [CustomerID], 
+      [Orders].[EmployeeID] AS [EmployeeID], 
+      [Orders].[OrderDate] AS [OrderDate], 
+      [Orders].[IsFulFilled] AS [IsFulFilled], 
+      [Orders].[Deleted] AS [Deleted]
+      FROM [dbo].[Orders] AS [Orders]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Store1.dbo.Customers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Customers">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="IsVIP" />
+      <PropertyRef Name="FccMember" />
+      <PropertyRef Name="FccPoints" />
+      <PropertyRef Name="NoChecks" />
+      <PropertyRef Name="CanBill" />
+      <PropertyRef Name="IsTaxExempt" />
+      <PropertyRef Name="BillCycleID" />
+      <PropertyRef Name="AutoDiscount1ID" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="BillToOffice" />
+      <PropertyRef Name="SOFInStore" />
+      <PropertyRef Name="NoHeatseals" />
+      <PropertyRef Name="IsFinCharged" />
+      <PropertyRef Name="BillCenterID" />
+      <PropertyRef Name="CreditLimit" />
+      <PropertyRef Name="PriceListID" />
+      <PropertyRef Name="IsPrintName" />
+      <PropertyRef Name="IsHotel" />
+      <PropertyRef Name="PrintIReminder" />
+      <PropertyRef Name="PrintPackingList" />
+      <PropertyRef Name="IsCompany" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="CoupCount" />
+      <PropertyRef Name="Designation" />
+      <PropertyRef Name="TaxAuthorityID" />
+      <PropertyRef Name="InvoicePrintID" />
+      <PropertyRef Name="NoEmailPromos" />
+      <PropertyRef Name="KioskCannotReplaceCard" />
+      <PropertyRef Name="EmailStatements" />
+      <PropertyRef Name="PrintStatements" />
+      <PropertyRef Name="AccountType" />
+      <PropertyRef Name="PriceLevel" />
+      <PropertyRef Name="RequestsNoEmail" />
+      <PropertyRef Name="InvoiceCopies" />
+      <PropertyRef Name="PrintInvoicePrices" />
+      <PropertyRef Name="PrintInvoiceTotals" />
+      <PropertyRef Name="NoPricesOnFirstCopy" />
+      <PropertyRef Name="NoTotalsOnFirstCopy" />
+    </Key>
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+    <Property Name="LastName" Type="varchar" MaxLength="30" />
+    <Property Name="FirstName" Type="varchar" MaxLength="20" />
+    <Property Name="Addr1" Type="varchar" MaxLength="30" />
+    <Property Name="Addr2" Type="varchar" MaxLength="20" />
+    <Property Name="City" Type="varchar" MaxLength="20" />
+    <Property Name="State" Type="varchar" MaxLength="3" />
+    <Property Name="Zip" Type="varchar" MaxLength="10" />
+    <Property Name="HomePhone" Type="varchar" MaxLength="18" />
+    <Property Name="WorkPhone" Type="varchar" MaxLength="18" />
+    <Property Name="Comment" Type="varchar" MaxLength="25" />
+    <Property Name="IsVIP" Type="bit" Nullable="false" />
+    <Property Name="FccMember" Type="bit" Nullable="false" />
+    <Property Name="FccPoints" Type="int" Nullable="false" />
+    <Property Name="NoChecks" Type="bit" Nullable="false" />
+    <Property Name="CanBill" Type="bit" Nullable="false" />
+    <Property Name="ReportCode" Type="varchar" MaxLength="20" />
+    <Property Name="IsTaxExempt" Type="bit" Nullable="false" />
+    <Property Name="Starch" Type="varchar" MaxLength="1" />
+    <Property Name="Package" Type="varchar" MaxLength="1" />
+    <Property Name="InvReminder" Type="varchar" MaxLength="500" />
+    <Property Name="OpenDate" Type="datetime" />
+    <Property Name="LastOrder" Type="datetime" />
+    <Property Name="LastCashout" Type="datetime" />
+    <Property Name="BillCycleID" Type="int" Nullable="false" />
+    <Property Name="CashReminder" Type="varchar" MaxLength="500" />
+    <Property Name="AutoDiscount1ID" Type="int" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="BillToOffice" Type="bit" Nullable="false" />
+    <Property Name="SOFCardNo" Type="varchar" MaxLength="80" />
+    <Property Name="SOFExpDate" Type="varchar" MaxLength="80" />
+    <Property Name="SOFInStore" Type="bit" Nullable="false" />
+    <Property Name="SOFBatch" Type="varchar" MaxLength="1" />
+    <Property Name="EMail" Type="varchar" MaxLength="500" />
+    <Property Name="NoHeatseals" Type="bit" Nullable="false" />
+    <Property Name="IsFinCharged" Type="bit" Nullable="false" />
+    <Property Name="ExtraAccount" Type="varchar" MaxLength="20" />
+    <Property Name="BillCenterID" Type="int" Nullable="false" />
+    <Property Name="CreditLimit" Type="money" Nullable="false" />
+    <Property Name="PriceListID" Type="int" Nullable="false" />
+    <Property Name="IsPrintName" Type="bit" Nullable="false" />
+    <Property Name="IsHotel" Type="bit" Nullable="false" />
+    <Property Name="PrintIReminder" Type="bit" Nullable="false" />
+    <Property Name="PrintPackingList" Type="bit" Nullable="false" />
+    <Property Name="CellPhone" Type="varchar" MaxLength="18" />
+    <Property Name="CompanyName" Type="varchar" MaxLength="40" />
+    <Property Name="IsCompany" Type="bit" Nullable="false" />
+    <Property Name="DLNumber" Type="varchar" MaxLength="20" />
+    <Property Name="Birthday" Type="datetime" />
+    <Property Name="Language" Type="int" Nullable="false" />
+    <Property Name="CoupCount" Type="int" Nullable="false" />
+    <Property Name="Designation" Type="int" Nullable="false" />
+    <Property Name="LoyaltyID" Type="varchar" MaxLength="20" />
+    <Property Name="TaxAuthorityID" Type="int" Nullable="false" />
+    <Property Name="InvoicePrintID" Type="int" Nullable="false" />
+    <Property Name="NoEmailPromos" Type="bit" Nullable="false" />
+    <Property Name="KioskCannotReplaceCard" Type="bit" Nullable="false" />
+    <Property Name="EmailStatements" Type="bit" Nullable="false" />
+    <Property Name="PrintStatements" Type="bit" Nullable="false" />
+    <Property Name="SMSAddress" Type="varchar" MaxLength="60" />
+    <Property Name="AccountType" Type="int" Nullable="false" />
+    <Property Name="PriceLevel" Type="int" Nullable="false" />
+    <Property Name="RequestsNoEmail" Type="bit" Nullable="false" />
+    <Property Name="ReadyEmail" Type="varchar" MaxLength="500" />
+    <Property Name="StatementEmail" Type="varchar" MaxLength="500" />
+    <Property Name="PromoEmail" Type="varchar" MaxLength="500" />
+    <Property Name="RouteEmail" Type="varchar" MaxLength="500" />
+    <Property Name="DiscExpiration" Type="datetime" />
+    <Property Name="BillLastName" Type="varchar" MaxLength="30" />
+    <Property Name="BillFirstName" Type="varchar" MaxLength="20" />
+    <Property Name="BillAddr1" Type="varchar" MaxLength="30" />
+    <Property Name="BillAddr2" Type="varchar" MaxLength="20" />
+    <Property Name="BillCity" Type="varchar" MaxLength="20" />
+    <Property Name="BillState" Type="varchar" MaxLength="3" />
+    <Property Name="BillZip" Type="varchar" MaxLength="10" />
+    <Property Name="Notes" Type="varchar" MaxLength="500" />
+    <Property Name="InvoiceCopies" Type="int" Nullable="false" />
+    <Property Name="PrintInvoicePrices" Type="bit" Nullable="false" />
+    <Property Name="PrintInvoiceTotals" Type="bit" Nullable="false" />
+    <Property Name="NoPricesOnFirstCopy" Type="bit" Nullable="false" />
+    <Property Name="NoTotalsOnFirstCopy" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Store1.dbo.Employees' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Employees">
+    <Key>
+      <PropertyRef Name="ClocksIn" />
+      <PropertyRef Name="DeniedAccess" />
+      <PropertyRef Name="NoDrawer" />
+      <PropertyRef Name="FullTime" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="EditInvoicePrices" />
+      <PropertyRef Name="EditCustAccData" />
+      <PropertyRef Name="CashOutAccounts" />
+      <PropertyRef Name="LogTransactions" />
+      <PropertyRef Name="EditCustDisc" />
+      <PropertyRef Name="CanVoidInvoices" />
+      <PropertyRef Name="CanCloseDay" />
+      <PropertyRef Name="NoCouponAdj" />
+      <PropertyRef Name="CannotCloseDrawers" />
+      <PropertyRef Name="CannotPrintAudit" />
+      <PropertyRef Name="CanAdjustAccounts" />
+      <PropertyRef Name="CanPrintDailyReport" />
+      <PropertyRef Name="CannotPrintDrawer" />
+      <PropertyRef Name="CannotMakeChange" />
+      <PropertyRef Name="CannotCashCheck" />
+      <PropertyRef Name="CannotDisburseCash" />
+      <PropertyRef Name="CannotAddCash" />
+      <PropertyRef Name="CannotViewTimeCard" />
+      <PropertyRef Name="CanEditInvoices" />
+      <PropertyRef Name="CannotEditEmployees" />
+      <PropertyRef Name="CannotDeleteEmployees" />
+      <PropertyRef Name="CannotEditTimeCards" />
+      <PropertyRef Name="CannotEditEmpAccess" />
+      <PropertyRef Name="CannotEditEmpCashDrawer" />
+      <PropertyRef Name="CannotEditPriceList" />
+      <PropertyRef Name="CannotEditDepartments" />
+      <PropertyRef Name="CannotEditCategories" />
+      <PropertyRef Name="CannotEditGarments" />
+      <PropertyRef Name="CannotEditUpcharges" />
+      <PropertyRef Name="CannotEditDiscountsFees" />
+      <PropertyRef Name="CannotEditMerchandise" />
+      <PropertyRef Name="CannotPrintManagerRpts" />
+      <PropertyRef Name="CannotPrintEmpLog" />
+      <PropertyRef Name="CannotPrintSales" />
+      <PropertyRef Name="CannotPrintFinancials" />
+      <PropertyRef Name="CannotPrintTracking" />
+      <PropertyRef Name="CannotPrintDrawers" />
+      <PropertyRef Name="EmpTimeOut" />
+      <PropertyRef Name="CannotDoPhysical" />
+      <PropertyRef Name="CannotSetupEmail" />
+      <PropertyRef Name="CanLowerPricesOnEdit" />
+      <PropertyRef Name="EditCustSalesTax" />
+      <PropertyRef Name="EditCustCheckWrite" />
+      <PropertyRef Name="CanInventoryBillOut" />
+      <PropertyRef Name="CanAddRemoveGarmentsOnEdit" />
+      <PropertyRef Name="CanAssignCustPLevels" />
+      <PropertyRef Name="CanSelectPLevelsInvoicing" />
+      <PropertyRef Name="CanSelectPLevelsEditing" />
+      <PropertyRef Name="CanEditCCOnFile" />
+      <PropertyRef Name="CanMPSBrowse" />
+      <PropertyRef Name="CanIssueVoidCCDebitsCredits" />
+      <PropertyRef Name="IsWinUser" />
+      <PropertyRef Name="IsLocked" />
+      <PropertyRef Name="CanDeleteCustomers" />
+      <PropertyRef Name="CanEditCustEmail" />
+      <PropertyRef Name="CanSendACustomerEmail" />
+      <PropertyRef Name="CanEditLoyaltyPts" />
+      <PropertyRef Name="CanEditCustInvoiceSettings" />
+      <PropertyRef Name="CanViewCustActivity" />
+      <PropertyRef Name="CanIssueAwardCards" />
+      <PropertyRef Name="CanReloadAwardCards" />
+      <PropertyRef Name="CanReloadPurchaseCards" />
+      <PropertyRef Name="CanVoidGiftTransactions" />
+      <PropertyRef Name="CannotViewLocations" />
+      <PropertyRef Name="CanAddGarmentsOnEdit" />
+      <PropertyRef Name="CanRemoveGarmentsOnEdit" />
+    </Key>
+    <Property Name="EmployeeID" Type="int" />
+    <Property Name="DrawerStation" Type="int" />
+    <Property Name="LastName" Type="varchar" MaxLength="30" />
+    <Property Name="FirstName" Type="varchar" MaxLength="15" />
+    <Property Name="ClocksIn" Type="bit" Nullable="false" />
+    <Property Name="Password" Type="varchar" MaxLength="8" />
+    <Property Name="DeniedAccess" Type="bit" Nullable="false" />
+    <Property Name="NoDrawer" Type="bit" Nullable="false" />
+    <Property Name="SalaryRate" Type="money" />
+    <Property Name="FullTime" Type="bit" Nullable="false" />
+    <Property Name="LastRaise" Type="datetime" />
+    <Property Name="Department" Type="varchar" MaxLength="15" />
+    <Property Name="SecurityLevel" Type="int" />
+    <Property Name="DrawerNumber" Type="int" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="EditInvoicePrices" Type="bit" Nullable="false" />
+    <Property Name="EditCustAccData" Type="bit" Nullable="false" />
+    <Property Name="CashOutAccounts" Type="bit" Nullable="false" />
+    <Property Name="LogTransactions" Type="bit" Nullable="false" />
+    <Property Name="PieceRate" Type="money" />
+    <Property Name="PieceRateLaundry" Type="money" />
+    <Property Name="PieceRateDryclean" Type="money" />
+    <Property Name="EditCustDisc" Type="bit" Nullable="false" />
+    <Property Name="CanVoidInvoices" Type="bit" Nullable="false" />
+    <Property Name="CanCloseDay" Type="bit" Nullable="false" />
+    <Property Name="NoCouponAdj" Type="bit" Nullable="false" />
+    <Property Name="CannotCloseDrawers" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintAudit" Type="bit" Nullable="false" />
+    <Property Name="CanAdjustAccounts" Type="bit" Nullable="false" />
+    <Property Name="CanPrintDailyReport" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintDrawer" Type="bit" Nullable="false" />
+    <Property Name="CannotMakeChange" Type="bit" Nullable="false" />
+    <Property Name="CannotCashCheck" Type="bit" Nullable="false" />
+    <Property Name="CannotDisburseCash" Type="bit" Nullable="false" />
+    <Property Name="CannotAddCash" Type="bit" Nullable="false" />
+    <Property Name="CannotViewTimeCard" Type="bit" Nullable="false" />
+    <Property Name="CanEditInvoices" Type="bit" Nullable="false" />
+    <Property Name="CannotEditEmployees" Type="bit" Nullable="false" />
+    <Property Name="CannotDeleteEmployees" Type="bit" Nullable="false" />
+    <Property Name="CannotEditTimeCards" Type="bit" Nullable="false" />
+    <Property Name="CannotEditEmpAccess" Type="bit" Nullable="false" />
+    <Property Name="CannotEditEmpCashDrawer" Type="bit" Nullable="false" />
+    <Property Name="CannotEditPriceList" Type="bit" Nullable="false" />
+    <Property Name="CannotEditDepartments" Type="bit" Nullable="false" />
+    <Property Name="CannotEditCategories" Type="bit" Nullable="false" />
+    <Property Name="CannotEditGarments" Type="bit" Nullable="false" />
+    <Property Name="CannotEditUpcharges" Type="bit" Nullable="false" />
+    <Property Name="CannotEditDiscountsFees" Type="bit" Nullable="false" />
+    <Property Name="CannotEditMerchandise" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintManagerRpts" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintEmpLog" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintSales" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintFinancials" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintTracking" Type="bit" Nullable="false" />
+    <Property Name="CannotPrintDrawers" Type="bit" Nullable="false" />
+    <Property Name="EmpTimeOut" Type="int" Nullable="false" />
+    <Property Name="CannotDoPhysical" Type="bit" Nullable="false" />
+    <Property Name="CannotSetupEmail" Type="bit" Nullable="false" />
+    <Property Name="CanLowerPricesOnEdit" Type="bit" Nullable="false" />
+    <Property Name="EditCustSalesTax" Type="bit" Nullable="false" />
+    <Property Name="EditCustCheckWrite" Type="bit" Nullable="false" />
+    <Property Name="CanInventoryBillOut" Type="bit" Nullable="false" />
+    <Property Name="Email" Type="varchar" MaxLength="80" />
+    <Property Name="CanAddRemoveGarmentsOnEdit" Type="bit" Nullable="false" />
+    <Property Name="CanAssignCustPLevels" Type="bit" Nullable="false" />
+    <Property Name="CanSelectPLevelsInvoicing" Type="bit" Nullable="false" />
+    <Property Name="CanSelectPLevelsEditing" Type="bit" Nullable="false" />
+    <Property Name="CanEditCCOnFile" Type="bit" Nullable="false" />
+    <Property Name="CanMPSBrowse" Type="bit" Nullable="false" />
+    <Property Name="CanIssueVoidCCDebitsCredits" Type="bit" Nullable="false" />
+    <Property Name="UserName" Type="varchar" MaxLength="50" />
+    <Property Name="UserPIN" Type="varchar" MaxLength="32" />
+    <Property Name="UserPassword" Type="varchar" MaxLength="32" />
+    <Property Name="UserSalt" Type="varchar" MaxLength="16" />
+    <Property Name="SecretQuestion" Type="varchar" MaxLength="50" />
+    <Property Name="SecretAnswer" Type="varchar" MaxLength="32" />
+    <Property Name="LastReset" Type="datetime" />
+    <Property Name="Domain" Type="varchar" MaxLength="50" />
+    <Property Name="IsWinUser" Type="bit" Nullable="false" />
+    <Property Name="IsLocked" Type="bit" Nullable="false" />
+    <Property Name="LockDate" Type="datetime" />
+    <Property Name="CanDeleteCustomers" Type="bit" Nullable="false" />
+    <Property Name="CanEditCustEmail" Type="bit" Nullable="false" />
+    <Property Name="CanSendACustomerEmail" Type="bit" Nullable="false" />
+    <Property Name="CanEditLoyaltyPts" Type="bit" Nullable="false" />
+    <Property Name="CanEditCustInvoiceSettings" Type="bit" Nullable="false" />
+    <Property Name="CanViewCustActivity" Type="bit" Nullable="false" />
+    <Property Name="CanIssueAwardCards" Type="bit" Nullable="false" />
+    <Property Name="CanReloadAwardCards" Type="bit" Nullable="false" />
+    <Property Name="CanReloadPurchaseCards" Type="bit" Nullable="false" />
+    <Property Name="CanVoidGiftTransactions" Type="bit" Nullable="false" />
+    <Property Name="EarliestClockin" Type="datetime" />
+    <Property Name="CannotViewLocations" Type="bit" Nullable="false" />
+    <Property Name="CanAddGarmentsOnEdit" Type="bit" Nullable="false" />
+    <Property Name="CanRemoveGarmentsOnEdit" Type="bit" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Store1.dbo.Orders' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Orders">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="IsFulFilled" />
+      <PropertyRef Name="Deleted" />
+    </Key>
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="OrderDate" Type="datetime" />
+    <Property Name="IsFulFilled" Type="bit" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>

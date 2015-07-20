@@ -1,0 +1,36 @@
+﻿
+   <Window 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="OnTheSpot.Views.GetNote"
+    Title="Get Note"
+    Height="190"
+    Width="300"
+    MinHeight="10"
+    MinWidth="300"
+    ResizeMode="CanResizeWithGrip"
+    ShowInTaskbar="False"
+    WindowStartupLocation="CenterOwner" 
+    FocusManager.FocusedElement="{Binding ElementName=NoteText}">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="41*"/>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="177*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="59*"/>
+            <RowDefinition Height="32*"/>
+            <RowDefinition Height="46*"/>
+        </Grid.RowDefinitions>
+        <!-- Accept or Cancel -->
+       
+       <TextBox x:Name="NoteText"  Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Text="Please enter note" Grid.ColumnSpan="2" Margin="0.2,10.2,33.6,10" Grid.RowSpan="2"/>
+        <Button Content="OK" Grid.Column="2" HorizontalAlignment="Left" Margin="0.2,0,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Height="36" Click="Button_Click_1"/>
+        <Button Content="CANCEL" Grid.Column="2" HorizontalAlignment="Left" Margin="92.2,0,0,0" Grid.Row="3" VerticalAlignment="Top" Width="75" Height="36" Click="Button_Click_2"/>
+
+
+    </Grid >
+
+</Window>

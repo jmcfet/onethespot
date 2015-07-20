@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AssemblyModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="AssemblyModelStoreContainer">
+    <EntitySet Name="AutoSort" EntityType="AssemblyModel.Store.AutoSort" store:Type="Tables" store:Schema="dbo" store:Name="AutoSort">
+      <DefiningQuery>SELECT 
+      [AutoSort].[InvoiceID] AS [InvoiceID], 
+      [AutoSort].[StoreID] AS [StoreID], 
+      [AutoSort].[CustomerID] AS [CustomerID], 
+      [AutoSort].[StoreInvoiceID] AS [StoreInvoiceID], 
+      [AutoSort].[PieceTotal] AS [PieceTotal], 
+      [AutoSort].[ItemNumber] AS [ItemNumber], 
+      [AutoSort].[ArticleCode] AS [ArticleCode], 
+      [AutoSort].[Description] AS [Description], 
+      [AutoSort].[OccPercent] AS [OccPercent], 
+      [AutoSort].[Hung] AS [Hung], 
+      [AutoSort].[Status] AS [Status], 
+      [AutoSort].[Conveyor] AS [Conveyor], 
+      [AutoSort].[Slot] AS [Slot], 
+      [AutoSort].[Out] AS [Out], 
+      [AutoSort].[Customer] AS [Customer], 
+      [AutoSort].[RFID] AS [RFID], 
+      [AutoSort].[Arm] AS [Arm], 
+      [AutoSort].[Queue] AS [Queue], 
+      [AutoSort].[State] AS [State], 
+      [AutoSort].[Remaining] AS [Remaining], 
+      [AutoSort].[InvoiceDate] AS [InvoiceDate], 
+      [AutoSort].[DueDate] AS [DueDate], 
+      [AutoSort].[HomePhone] AS [HomePhone], 
+      [AutoSort].[BaySection] AS [BaySection], 
+      [AutoSort].[BagLabel1] AS [BagLabel1], 
+      [AutoSort].[BagLabel2] AS [BagLabel2], 
+      [AutoSort].[BagLabel3] AS [BagLabel3], 
+      [AutoSort].[BagLabel4] AS [BagLabel4], 
+      [AutoSort].[BagLabel5] AS [BagLabel5], 
+      [AutoSort].[BagLabel6] AS [BagLabel6], 
+      [AutoSort].[UseBAMStorage] AS [UseBAMStorage], 
+      [AutoSort].[SubOut] AS [SubOut], 
+      [AutoSort].[FlagTag] AS [FlagTag]
+      FROM [dbo].[AutoSort] AS [AutoSort]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="Invoices" EntityType="AssemblyModel.Store.Invoices" store:Type="Tables" store:Schema="dbo" store:Name="Invoices">
+      <DefiningQuery>SELECT 
+      [Invoices].[InvoiceID] AS [InvoiceID], 
+      [Invoices].[OrderID] AS [OrderID], 
+      [Invoices].[StoreID] AS [StoreID], 
+      [Invoices].[CustomerID] AS [CustomerID], 
+      [Invoices].[DepartmentID] AS [DepartmentID], 
+      [Invoices].[Department] AS [Department], 
+      [Invoices].[Rack] AS [Rack], 
+      [Invoices].[LotInfo] AS [LotInfo], 
+      [Invoices].[InvoiceEmpID] AS [InvoiceEmpID], 
+      [Invoices].[RackEmpID] AS [RackEmpID], 
+      [Invoices].[PickupEmpID] AS [PickupEmpID], 
+      [Invoices].[InvoiceDate] AS [InvoiceDate], 
+      [Invoices].[DueDate] AS [DueDate], 
+      [Invoices].[RackDate] AS [RackDate], 
+      [Invoices].[PickupDate] AS [PickupDate], 
+      [Invoices].[IsMissingAmount] AS [IsMissingAmount], 
+      [Invoices].[WorkPhase] AS [WorkPhase], 
+      [Invoices].[Pieces] AS [Pieces], 
+      [Invoices].[Tax1ID] AS [Tax1ID], 
+      [Invoices].[Taxable] AS [Taxable], 
+      [Invoices].[TaxTotal] AS [TaxTotal], 
+      [Invoices].[SubTotal] AS [SubTotal], 
+      [Invoices].[Total] AS [Total], 
+      [Invoices].[PaidAmount] AS [PaidAmount], 
+      [Invoices].[PaymentID] AS [PaymentID], 
+      [Invoices].[CoupTotal] AS [CoupTotal], 
+      [Invoices].[DiscTotal] AS [DiscTotal], 
+      [Invoices].[Deleted] AS [Deleted], 
+      [Invoices].[CoupDiscable] AS [CoupDiscable], 
+      [Invoices].[SrvFeeable] AS [SrvFeeable], 
+      [Invoices].[SrvFeeTotal] AS [SrvFeeTotal], 
+      [Invoices].[PaymentDate] AS [PaymentDate], 
+      [Invoices].[HotelRoom] AS [HotelRoom], 
+      [Invoices].[GuestName] AS [GuestName], 
+      [Invoices].[ValetTicketID] AS [ValetTicketID], 
+      [Invoices].[BillCustomerID] AS [BillCustomerID], 
+      [Invoices].[Tax2ID] AS [Tax2ID], 
+      [Invoices].[Tax3ID] AS [Tax3ID], 
+      [Invoices].[Taxable1] AS [Taxable1], 
+      [Invoices].[Taxable2] AS [Taxable2], 
+      [Invoices].[Taxable3] AS [Taxable3], 
+      [Invoices].[TaxTotal1] AS [TaxTotal1], 
+      [Invoices].[TaxTotal2] AS [TaxTotal2], 
+      [Invoices].[TaxTotal3] AS [TaxTotal3], 
+      [Invoices].[OriginalTotal] AS [OriginalTotal], 
+      [Invoices].[IsRedo] AS [IsRedo], 
+      [Invoices].[IsSplit] AS [IsSplit], 
+      [Invoices].[TaxAuthorityID] AS [TaxAuthorityID], 
+      [Invoices].[BaggerMemo] AS [BaggerMemo], 
+      [Invoices].[PayCode] AS [PayCode], 
+      [Invoices].[AssemblyDate] AS [AssemblyDate], 
+      [Invoices].[MarkInDate] AS [MarkInDate], 
+      [Invoices].[MarkInEmpID] AS [MarkInEmpID]
+      FROM [dbo].[Invoices] AS [Invoices]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Assembly.dbo.AutoSort' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="AutoSort">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="Queue" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="Remaining" />
+      <PropertyRef Name="BaySection" />
+      <PropertyRef Name="UseBAMStorage" />
+      <PropertyRef Name="SubOut" />
+    </Key>
+    <Property Name="InvoiceID" Type="int" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="StoreInvoiceID" Type="varchar" MaxLength="20" />
+    <Property Name="PieceTotal" Type="varchar" MaxLength="2" />
+    <Property Name="ItemNumber" Type="varchar" MaxLength="2" />
+    <Property Name="ArticleCode" Type="varchar" MaxLength="20" />
+    <Property Name="Description" Type="varchar" MaxLength="104" />
+    <Property Name="OccPercent" Type="varchar" MaxLength="3" />
+    <Property Name="Hung" Type="varchar" MaxLength="1" />
+    <Property Name="Status" Type="varchar" MaxLength="1" />
+    <Property Name="Conveyor" Type="varchar" MaxLength="2" />
+    <Property Name="Slot" Type="varchar" MaxLength="5" />
+    <Property Name="Out" Type="varchar" MaxLength="5" />
+    <Property Name="Customer" Type="varchar" MaxLength="60" />
+    <Property Name="RFID" Type="varchar" MaxLength="20" />
+    <Property Name="Arm" Type="varchar" MaxLength="3" />
+    <Property Name="Queue" Type="int" Nullable="false" />
+    <Property Name="State" Type="int" Nullable="false" />
+    <Property Name="Remaining" Type="int" Nullable="false" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="DueDate" Type="datetime" />
+    <Property Name="HomePhone" Type="varchar" MaxLength="18" />
+    <Property Name="BaySection" Type="int" Nullable="false" />
+    <Property Name="BagLabel1" Type="varchar" MaxLength="30" />
+    <Property Name="BagLabel2" Type="varchar" MaxLength="30" />
+    <Property Name="BagLabel3" Type="varchar" MaxLength="30" />
+    <Property Name="BagLabel4" Type="varchar" MaxLength="30" />
+    <Property Name="BagLabel5" Type="varchar" MaxLength="30" />
+    <Property Name="BagLabel6" Type="varchar" MaxLength="30" />
+    <Property Name="UseBAMStorage" Type="bit" Nullable="false" />
+    <Property Name="SubOut" Type="int" Nullable="false" />
+    <Property Name="FlagTag" Type="varchar" MaxLength="200" />
+  </EntityType>
+  <!--Errors Found During Generation:
+      warning 6002: The table/view 'Assembly.dbo.Invoices' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+  <EntityType Name="Invoices">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="InvoiceEmpID" />
+      <PropertyRef Name="RackEmpID" />
+      <PropertyRef Name="PickupEmpID" />
+      <PropertyRef Name="IsMissingAmount" />
+      <PropertyRef Name="WorkPhase" />
+      <PropertyRef Name="Pieces" />
+      <PropertyRef Name="Tax1ID" />
+      <PropertyRef Name="Taxable" />
+      <PropertyRef Name="TaxTotal" />
+      <PropertyRef Name="SubTotal" />
+      <PropertyRef Name="Total" />
+      <PropertyRef Name="PaidAmount" />
+      <PropertyRef Name="PaymentID" />
+      <PropertyRef Name="CoupTotal" />
+      <PropertyRef Name="DiscTotal" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="CoupDiscable" />
+      <PropertyRef Name="SrvFeeable" />
+      <PropertyRef Name="SrvFeeTotal" />
+      <PropertyRef Name="ValetTicketID" />
+      <PropertyRef Name="BillCustomerID" />
+      <PropertyRef Name="Tax2ID" />
+      <PropertyRef Name="Tax3ID" />
+      <PropertyRef Name="Taxable1" />
+      <PropertyRef Name="Taxable2" />
+      <PropertyRef Name="Taxable3" />
+      <PropertyRef Name="TaxTotal1" />
+      <PropertyRef Name="TaxTotal2" />
+      <PropertyRef Name="TaxTotal3" />
+      <PropertyRef Name="OriginalTotal" />
+      <PropertyRef Name="IsRedo" />
+      <PropertyRef Name="IsSplit" />
+      <PropertyRef Name="TaxAuthorityID" />
+      <PropertyRef Name="PayCode" />
+      <PropertyRef Name="MarkInEmpID" />
+    </Key>
+    <Property Name="InvoiceID" Type="int" Nullable="false" />
+    <Property Name="OrderID" Type="int" Nullable="false" />
+    <Property Name="StoreID" Type="int" Nullable="false" />
+    <Property Name="CustomerID" Type="int" Nullable="false" />
+    <Property Name="DepartmentID" Type="int" Nullable="false" />
+    <Property Name="Department" Type="varchar" MaxLength="20" />
+    <Property Name="Rack" Type="varchar" MaxLength="6" />
+    <Property Name="LotInfo" Type="varchar" MaxLength="25" />
+    <Property Name="InvoiceEmpID" Type="int" Nullable="false" />
+    <Property Name="RackEmpID" Type="int" Nullable="false" />
+    <Property Name="PickupEmpID" Type="int" Nullable="false" />
+    <Property Name="InvoiceDate" Type="datetime" />
+    <Property Name="DueDate" Type="datetime" />
+    <Property Name="RackDate" Type="datetime" />
+    <Property Name="PickupDate" Type="datetime" />
+    <Property Name="IsMissingAmount" Type="bit" Nullable="false" />
+    <Property Name="WorkPhase" Type="int" Nullable="false" />
+    <Property Name="Pieces" Type="real" Nullable="false" />
+    <Property Name="Tax1ID" Type="int" Nullable="false" />
+    <Property Name="Taxable" Type="money" Nullable="false" />
+    <Property Name="TaxTotal" Type="money" Nullable="false" />
+    <Property Name="SubTotal" Type="money" Nullable="false" />
+    <Property Name="Total" Type="money" Nullable="false" />
+    <Property Name="PaidAmount" Type="money" Nullable="false" />
+    <Property Name="PaymentID" Type="int" Nullable="false" />
+    <Property Name="CoupTotal" Type="money" Nullable="false" />
+    <Property Name="DiscTotal" Type="money" Nullable="false" />
+    <Property Name="Deleted" Type="bit" Nullable="false" />
+    <Property Name="CoupDiscable" Type="money" Nullable="false" />
+    <Property Name="SrvFeeable" Type="money" Nullable="false" />
+    <Property Name="SrvFeeTotal" Type="money" Nullable="false" />
+    <Property Name="PaymentDate" Type="datetime" />
+    <Property Name="HotelRoom" Type="varchar" MaxLength="10" />
+    <Property Name="GuestName" Type="varchar" MaxLength="30" />
+    <Property Name="ValetTicketID" Type="int" Nullable="false" />
+    <Property Name="BillCustomerID" Type="int" Nullable="false" />
+    <Property Name="Tax2ID" Type="int" Nullable="false" />
+    <Property Name="Tax3ID" Type="int" Nullable="false" />
+    <Property Name="Taxable1" Type="money" Nullable="false" />
+    <Property Name="Taxable2" Type="money" Nullable="false" />
+    <Property Name="Taxable3" Type="money" Nullable="false" />
+    <Property Name="TaxTotal1" Type="money" Nullable="false" />
+    <Property Name="TaxTotal2" Type="money" Nullable="false" />
+    <Property Name="TaxTotal3" Type="money" Nullable="false" />
+    <Property Name="OriginalTotal" Type="money" Nullable="false" />
+    <Property Name="IsRedo" Type="bit" Nullable="false" />
+    <Property Name="IsSplit" Type="bit" Nullable="false" />
+    <Property Name="TaxAuthorityID" Type="int" Nullable="false" />
+    <Property Name="BaggerMemo" Type="varchar" MaxLength="100" />
+    <Property Name="PayCode" Type="int" Nullable="false" />
+    <Property Name="AssemblyDate" Type="datetime" />
+    <Property Name="MarkInDate" Type="datetime" />
+    <Property Name="MarkInEmpID" Type="int" Nullable="false" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BCSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="BCSModelStoreContainer">
+    <EntitySet Name="Bins" EntityType="BCSModel.Store.Bins" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Categories" EntityType="BCSModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Configuration" EntityType="BCSModel.Store.Configuration" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="GSS" EntityType="BCSModel.Store.GSS" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Items" EntityType="BCSModel.Store.Items" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Printers" EntityType="BCSModel.Store.Printers" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="QCSInfo" EntityType="BCSModel.Store.QCSInfo" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Bins_Categories" Association="BCSModel.Store.FK_Bins_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Bins" EntitySet="Bins" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Items_Categories" Association="BCSModel.Store.FK_Items_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Items" EntitySet="Items" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Bins">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="BarCode" Type="nvarchar(max)" />
+    <Property Name="Weight" Type="nvarchar(max)" />
+    <Property Name="MaxWeight" Type="nvarchar(max)" />
+    <Property Name="Category" Type="int" Nullable="false" />
+    <Property Name="PhigidSlot" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Categories">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar(max)" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Configuration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="POSWindow" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="ShowPass" Type="int" />
+  </EntityType>
+  <EntityType Name="GSS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="barcode" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="bin" Type="int" Nullable="false" />
+    <Property Name="time" Type="datetime" Nullable="false" />
+    <Property Name="temp" Type="nchar" MaxLength="10" />
+    <Property Name="temp1" Type="nchar" MaxLength="10" />
+    <Property Name="temp2" Type="nchar" MaxLength="10" />
+    <Property Name="temp3" Type="nchar" MaxLength="10" />
+  </EntityType>
+  <EntityType Name="Items">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CustID" Type="int" />
+    <Property Name="BarCode" Type="nvarchar" MaxLength="50" />
+    <Property Name="State" Type="nchar" MaxLength="10" />
+    <Property Name="CatID" Type="int" />
+    <Property Name="CreateDate" Type="datetime" />
+    <Property Name="Note" Type="nvarchar(max)" />
+    <Property Name="picture" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="Printers">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="storename" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="printerName" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="QCSInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="HeatSeal" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Bin" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Time" Type="datetime" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Bins_Categories">
+    <End Role="Categories" Type="BCSModel.Store.Categories" Multiplicity="1" />
+    <End Role="Bins" Type="BCSModel.Store.Bins" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Bins">
+        <PropertyRef Name="Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Items_Categories">
+    <End Role="Categories" Type="BCSModel.Store.Categories" Multiplicity="0..1" />
+    <End Role="Items" Type="BCSModel.Store.Items" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Items">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

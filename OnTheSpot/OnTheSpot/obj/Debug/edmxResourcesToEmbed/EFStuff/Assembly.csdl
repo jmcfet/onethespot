@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AssemblyModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="AssemblyEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Invoices" EntityType="AssemblyModel.Invoice" />
+    <EntitySet Name="AutoSorts" EntityType="AssemblyModel.AutoSort" />
+  </EntityContainer>
+  <EntityType Name="Invoice">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="DepartmentID" />
+      <PropertyRef Name="InvoiceEmpID" />
+      <PropertyRef Name="RackEmpID" />
+      <PropertyRef Name="PickupEmpID" />
+      <PropertyRef Name="IsMissingAmount" />
+      <PropertyRef Name="WorkPhase" />
+      <PropertyRef Name="Pieces" />
+      <PropertyRef Name="Tax1ID" />
+      <PropertyRef Name="Taxable" />
+      <PropertyRef Name="TaxTotal" />
+      <PropertyRef Name="SubTotal" />
+      <PropertyRef Name="Total" />
+      <PropertyRef Name="PaidAmount" />
+      <PropertyRef Name="PaymentID" />
+      <PropertyRef Name="CoupTotal" />
+      <PropertyRef Name="DiscTotal" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="CoupDiscable" />
+      <PropertyRef Name="SrvFeeable" />
+      <PropertyRef Name="SrvFeeTotal" />
+      <PropertyRef Name="ValetTicketID" />
+      <PropertyRef Name="BillCustomerID" />
+      <PropertyRef Name="Tax2ID" />
+      <PropertyRef Name="Tax3ID" />
+      <PropertyRef Name="Taxable1" />
+      <PropertyRef Name="Taxable2" />
+      <PropertyRef Name="Taxable3" />
+      <PropertyRef Name="TaxTotal1" />
+      <PropertyRef Name="TaxTotal2" />
+      <PropertyRef Name="TaxTotal3" />
+      <PropertyRef Name="OriginalTotal" />
+      <PropertyRef Name="IsRedo" />
+      <PropertyRef Name="IsSplit" />
+      <PropertyRef Name="TaxAuthorityID" />
+      <PropertyRef Name="PayCode" />
+      <PropertyRef Name="MarkInEmpID" />
+    </Key>
+    <Property Type="Int32" Name="InvoiceID" Nullable="false" />
+    <Property Type="Int32" Name="OrderID" Nullable="false" />
+    <Property Type="Int32" Name="StoreID" Nullable="false" />
+    <Property Type="Int32" Name="CustomerID" Nullable="false" />
+    <Property Type="Int32" Name="DepartmentID" Nullable="false" />
+    <Property Type="String" Name="Department" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Rack" MaxLength="6" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="LotInfo" MaxLength="25" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="InvoiceEmpID" Nullable="false" />
+    <Property Type="Int32" Name="RackEmpID" Nullable="false" />
+    <Property Type="Int32" Name="PickupEmpID" Nullable="false" />
+    <Property Type="DateTime" Name="InvoiceDate" />
+    <Property Type="DateTime" Name="DueDate" />
+    <Property Type="DateTime" Name="RackDate" />
+    <Property Type="DateTime" Name="PickupDate" />
+    <Property Type="Boolean" Name="IsMissingAmount" Nullable="false" />
+    <Property Type="Int32" Name="WorkPhase" Nullable="false" />
+    <Property Type="Single" Name="Pieces" Nullable="false" />
+    <Property Type="Int32" Name="Tax1ID" Nullable="false" />
+    <Property Type="Decimal" Name="Taxable" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TaxTotal" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="SubTotal" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Total" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PaidAmount" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Int32" Name="PaymentID" Nullable="false" />
+    <Property Type="Decimal" Name="CoupTotal" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="DiscTotal" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Decimal" Name="CoupDiscable" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="SrvFeeable" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="SrvFeeTotal" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="DateTime" Name="PaymentDate" />
+    <Property Type="String" Name="HotelRoom" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="GuestName" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="ValetTicketID" Nullable="false" />
+    <Property Type="Int32" Name="BillCustomerID" Nullable="false" />
+    <Property Type="Int32" Name="Tax2ID" Nullable="false" />
+    <Property Type="Int32" Name="Tax3ID" Nullable="false" />
+    <Property Type="Decimal" Name="Taxable1" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Taxable2" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="Taxable3" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TaxTotal1" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TaxTotal2" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="TaxTotal3" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="OriginalTotal" Nullable="false" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="IsRedo" Nullable="false" />
+    <Property Type="Boolean" Name="IsSplit" Nullable="false" />
+    <Property Type="Int32" Name="TaxAuthorityID" Nullable="false" />
+    <Property Type="String" Name="BaggerMemo" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="PayCode" Nullable="false" />
+    <Property Type="DateTime" Name="AssemblyDate" />
+    <Property Type="DateTime" Name="MarkInDate" />
+    <Property Type="Int32" Name="MarkInEmpID" Nullable="false" />
+  </EntityType>
+  <EntityType Name="AutoSort">
+    <Key>
+      <PropertyRef Name="InvoiceID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="Queue" />
+      <PropertyRef Name="State" />
+      <PropertyRef Name="Remaining" />
+      <PropertyRef Name="BaySection" />
+      <PropertyRef Name="UseBAMStorage" />
+      <PropertyRef Name="SubOut" />
+    </Key>
+    <Property Type="Int32" Name="InvoiceID" Nullable="false" />
+    <Property Type="Int32" Name="StoreID" Nullable="false" />
+    <Property Type="Int32" Name="CustomerID" Nullable="false" />
+    <Property Type="String" Name="StoreInvoiceID" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PieceTotal" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ItemNumber" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ArticleCode" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Description" MaxLength="104" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="OccPercent" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Hung" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Status" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Conveyor" MaxLength="2" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Slot" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Out" MaxLength="5" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Customer" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RFID" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Arm" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="Queue" Nullable="false" />
+    <Property Type="Int32" Name="State" Nullable="false" />
+    <Property Type="Int32" Name="Remaining" Nullable="false" />
+    <Property Type="DateTime" Name="InvoiceDate" />
+    <Property Type="DateTime" Name="DueDate" />
+    <Property Type="String" Name="HomePhone" MaxLength="18" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="BaySection" Nullable="false" />
+    <Property Type="String" Name="BagLabel1" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BagLabel2" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BagLabel3" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BagLabel4" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BagLabel5" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BagLabel6" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="UseBAMStorage" Nullable="false" />
+    <Property Type="Int32" Name="SubOut" Nullable="false" />
+    <Property Type="String" Name="FlagTag" MaxLength="200" FixedLength="false" Unicode="false" />
+  </EntityType>
+</Schema>

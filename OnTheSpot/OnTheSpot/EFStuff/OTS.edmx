@@ -1,0 +1,1081 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="Store1Model.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="Store1ModelStoreContainer">
+          <EntitySet Name="Customers" EntityType="Store1Model.Store.Customers" store:Type="Tables" store:Schema="dbo" store:Name="Customers">
+            <DefiningQuery>SELECT 
+      [Customers].[CustomerID] AS [CustomerID], 
+      [Customers].[StoreID] AS [StoreID], 
+      [Customers].[LastName] AS [LastName], 
+      [Customers].[FirstName] AS [FirstName], 
+      [Customers].[Addr1] AS [Addr1], 
+      [Customers].[Addr2] AS [Addr2], 
+      [Customers].[City] AS [City], 
+      [Customers].[State] AS [State], 
+      [Customers].[Zip] AS [Zip], 
+      [Customers].[HomePhone] AS [HomePhone], 
+      [Customers].[WorkPhone] AS [WorkPhone], 
+      [Customers].[Comment] AS [Comment], 
+      [Customers].[IsVIP] AS [IsVIP], 
+      [Customers].[FccMember] AS [FccMember], 
+      [Customers].[FccPoints] AS [FccPoints], 
+      [Customers].[NoChecks] AS [NoChecks], 
+      [Customers].[CanBill] AS [CanBill], 
+      [Customers].[ReportCode] AS [ReportCode], 
+      [Customers].[IsTaxExempt] AS [IsTaxExempt], 
+      [Customers].[Starch] AS [Starch], 
+      [Customers].[Package] AS [Package], 
+      [Customers].[InvReminder] AS [InvReminder], 
+      [Customers].[OpenDate] AS [OpenDate], 
+      [Customers].[LastOrder] AS [LastOrder], 
+      [Customers].[LastCashout] AS [LastCashout], 
+      [Customers].[BillCycleID] AS [BillCycleID], 
+      [Customers].[CashReminder] AS [CashReminder], 
+      [Customers].[AutoDiscount1ID] AS [AutoDiscount1ID], 
+      [Customers].[Deleted] AS [Deleted], 
+      [Customers].[BillToOffice] AS [BillToOffice], 
+      [Customers].[SOFCardNo] AS [SOFCardNo], 
+      [Customers].[SOFExpDate] AS [SOFExpDate], 
+      [Customers].[SOFInStore] AS [SOFInStore], 
+      [Customers].[SOFBatch] AS [SOFBatch], 
+      [Customers].[EMail] AS [EMail], 
+      [Customers].[NoHeatseals] AS [NoHeatseals], 
+      [Customers].[IsFinCharged] AS [IsFinCharged], 
+      [Customers].[ExtraAccount] AS [ExtraAccount], 
+      [Customers].[BillCenterID] AS [BillCenterID], 
+      [Customers].[CreditLimit] AS [CreditLimit], 
+      [Customers].[PriceListID] AS [PriceListID], 
+      [Customers].[IsPrintName] AS [IsPrintName], 
+      [Customers].[IsHotel] AS [IsHotel], 
+      [Customers].[PrintIReminder] AS [PrintIReminder], 
+      [Customers].[PrintPackingList] AS [PrintPackingList], 
+      [Customers].[CellPhone] AS [CellPhone], 
+      [Customers].[CompanyName] AS [CompanyName], 
+      [Customers].[IsCompany] AS [IsCompany], 
+      [Customers].[DLNumber] AS [DLNumber], 
+      [Customers].[Birthday] AS [Birthday], 
+      [Customers].[Language] AS [Language], 
+      [Customers].[CoupCount] AS [CoupCount], 
+      [Customers].[Designation] AS [Designation], 
+      [Customers].[LoyaltyID] AS [LoyaltyID], 
+      [Customers].[TaxAuthorityID] AS [TaxAuthorityID], 
+      [Customers].[InvoicePrintID] AS [InvoicePrintID], 
+      [Customers].[NoEmailPromos] AS [NoEmailPromos], 
+      [Customers].[KioskCannotReplaceCard] AS [KioskCannotReplaceCard], 
+      [Customers].[EmailStatements] AS [EmailStatements], 
+      [Customers].[PrintStatements] AS [PrintStatements], 
+      [Customers].[SMSAddress] AS [SMSAddress], 
+      [Customers].[AccountType] AS [AccountType], 
+      [Customers].[PriceLevel] AS [PriceLevel], 
+      [Customers].[RequestsNoEmail] AS [RequestsNoEmail], 
+      [Customers].[ReadyEmail] AS [ReadyEmail], 
+      [Customers].[StatementEmail] AS [StatementEmail], 
+      [Customers].[PromoEmail] AS [PromoEmail], 
+      [Customers].[RouteEmail] AS [RouteEmail], 
+      [Customers].[DiscExpiration] AS [DiscExpiration], 
+      [Customers].[BillLastName] AS [BillLastName], 
+      [Customers].[BillFirstName] AS [BillFirstName], 
+      [Customers].[BillAddr1] AS [BillAddr1], 
+      [Customers].[BillAddr2] AS [BillAddr2], 
+      [Customers].[BillCity] AS [BillCity], 
+      [Customers].[BillState] AS [BillState], 
+      [Customers].[BillZip] AS [BillZip], 
+      [Customers].[Notes] AS [Notes], 
+      [Customers].[InvoiceCopies] AS [InvoiceCopies], 
+      [Customers].[PrintInvoicePrices] AS [PrintInvoicePrices], 
+      [Customers].[PrintInvoiceTotals] AS [PrintInvoiceTotals], 
+      [Customers].[NoPricesOnFirstCopy] AS [NoPricesOnFirstCopy], 
+      [Customers].[NoTotalsOnFirstCopy] AS [NoTotalsOnFirstCopy]
+      FROM [dbo].[Customers] AS [Customers]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Employees" EntityType="Store1Model.Store.Employees" store:Type="Tables" store:Schema="dbo" store:Name="Employees">
+            <DefiningQuery>SELECT 
+      [Employees].[EmployeeID] AS [EmployeeID], 
+      [Employees].[DrawerStation] AS [DrawerStation], 
+      [Employees].[LastName] AS [LastName], 
+      [Employees].[FirstName] AS [FirstName], 
+      [Employees].[ClocksIn] AS [ClocksIn], 
+      [Employees].[Password] AS [Password], 
+      [Employees].[DeniedAccess] AS [DeniedAccess], 
+      [Employees].[NoDrawer] AS [NoDrawer], 
+      [Employees].[SalaryRate] AS [SalaryRate], 
+      [Employees].[FullTime] AS [FullTime], 
+      [Employees].[LastRaise] AS [LastRaise], 
+      [Employees].[Department] AS [Department], 
+      [Employees].[SecurityLevel] AS [SecurityLevel], 
+      [Employees].[DrawerNumber] AS [DrawerNumber], 
+      [Employees].[Deleted] AS [Deleted], 
+      [Employees].[EditInvoicePrices] AS [EditInvoicePrices], 
+      [Employees].[EditCustAccData] AS [EditCustAccData], 
+      [Employees].[CashOutAccounts] AS [CashOutAccounts], 
+      [Employees].[LogTransactions] AS [LogTransactions], 
+      [Employees].[PieceRate] AS [PieceRate], 
+      [Employees].[PieceRateLaundry] AS [PieceRateLaundry], 
+      [Employees].[PieceRateDryclean] AS [PieceRateDryclean], 
+      [Employees].[EditCustDisc] AS [EditCustDisc], 
+      [Employees].[CanVoidInvoices] AS [CanVoidInvoices], 
+      [Employees].[CanCloseDay] AS [CanCloseDay], 
+      [Employees].[NoCouponAdj] AS [NoCouponAdj], 
+      [Employees].[CannotCloseDrawers] AS [CannotCloseDrawers], 
+      [Employees].[CannotPrintAudit] AS [CannotPrintAudit], 
+      [Employees].[CanAdjustAccounts] AS [CanAdjustAccounts], 
+      [Employees].[CanPrintDailyReport] AS [CanPrintDailyReport], 
+      [Employees].[CannotPrintDrawer] AS [CannotPrintDrawer], 
+      [Employees].[CannotMakeChange] AS [CannotMakeChange], 
+      [Employees].[CannotCashCheck] AS [CannotCashCheck], 
+      [Employees].[CannotDisburseCash] AS [CannotDisburseCash], 
+      [Employees].[CannotAddCash] AS [CannotAddCash], 
+      [Employees].[CannotViewTimeCard] AS [CannotViewTimeCard], 
+      [Employees].[CanEditInvoices] AS [CanEditInvoices], 
+      [Employees].[CannotEditEmployees] AS [CannotEditEmployees], 
+      [Employees].[CannotDeleteEmployees] AS [CannotDeleteEmployees], 
+      [Employees].[CannotEditTimeCards] AS [CannotEditTimeCards], 
+      [Employees].[CannotEditEmpAccess] AS [CannotEditEmpAccess], 
+      [Employees].[CannotEditEmpCashDrawer] AS [CannotEditEmpCashDrawer], 
+      [Employees].[CannotEditPriceList] AS [CannotEditPriceList], 
+      [Employees].[CannotEditDepartments] AS [CannotEditDepartments], 
+      [Employees].[CannotEditCategories] AS [CannotEditCategories], 
+      [Employees].[CannotEditGarments] AS [CannotEditGarments], 
+      [Employees].[CannotEditUpcharges] AS [CannotEditUpcharges], 
+      [Employees].[CannotEditDiscountsFees] AS [CannotEditDiscountsFees], 
+      [Employees].[CannotEditMerchandise] AS [CannotEditMerchandise], 
+      [Employees].[CannotPrintManagerRpts] AS [CannotPrintManagerRpts], 
+      [Employees].[CannotPrintEmpLog] AS [CannotPrintEmpLog], 
+      [Employees].[CannotPrintSales] AS [CannotPrintSales], 
+      [Employees].[CannotPrintFinancials] AS [CannotPrintFinancials], 
+      [Employees].[CannotPrintTracking] AS [CannotPrintTracking], 
+      [Employees].[CannotPrintDrawers] AS [CannotPrintDrawers], 
+      [Employees].[EmpTimeOut] AS [EmpTimeOut], 
+      [Employees].[CannotDoPhysical] AS [CannotDoPhysical], 
+      [Employees].[CannotSetupEmail] AS [CannotSetupEmail], 
+      [Employees].[CanLowerPricesOnEdit] AS [CanLowerPricesOnEdit], 
+      [Employees].[EditCustSalesTax] AS [EditCustSalesTax], 
+      [Employees].[EditCustCheckWrite] AS [EditCustCheckWrite], 
+      [Employees].[CanInventoryBillOut] AS [CanInventoryBillOut], 
+      [Employees].[Email] AS [Email], 
+      [Employees].[CanAddRemoveGarmentsOnEdit] AS [CanAddRemoveGarmentsOnEdit], 
+      [Employees].[CanAssignCustPLevels] AS [CanAssignCustPLevels], 
+      [Employees].[CanSelectPLevelsInvoicing] AS [CanSelectPLevelsInvoicing], 
+      [Employees].[CanSelectPLevelsEditing] AS [CanSelectPLevelsEditing], 
+      [Employees].[CanEditCCOnFile] AS [CanEditCCOnFile], 
+      [Employees].[CanMPSBrowse] AS [CanMPSBrowse], 
+      [Employees].[CanIssueVoidCCDebitsCredits] AS [CanIssueVoidCCDebitsCredits], 
+      [Employees].[UserName] AS [UserName], 
+      [Employees].[UserPIN] AS [UserPIN], 
+      [Employees].[UserPassword] AS [UserPassword], 
+      [Employees].[UserSalt] AS [UserSalt], 
+      [Employees].[SecretQuestion] AS [SecretQuestion], 
+      [Employees].[SecretAnswer] AS [SecretAnswer], 
+      [Employees].[LastReset] AS [LastReset], 
+      [Employees].[Domain] AS [Domain], 
+      [Employees].[IsWinUser] AS [IsWinUser], 
+      [Employees].[IsLocked] AS [IsLocked], 
+      [Employees].[LockDate] AS [LockDate], 
+      [Employees].[CanDeleteCustomers] AS [CanDeleteCustomers], 
+      [Employees].[CanEditCustEmail] AS [CanEditCustEmail], 
+      [Employees].[CanSendACustomerEmail] AS [CanSendACustomerEmail], 
+      [Employees].[CanEditLoyaltyPts] AS [CanEditLoyaltyPts], 
+      [Employees].[CanEditCustInvoiceSettings] AS [CanEditCustInvoiceSettings], 
+      [Employees].[CanViewCustActivity] AS [CanViewCustActivity], 
+      [Employees].[CanIssueAwardCards] AS [CanIssueAwardCards], 
+      [Employees].[CanReloadAwardCards] AS [CanReloadAwardCards], 
+      [Employees].[CanReloadPurchaseCards] AS [CanReloadPurchaseCards], 
+      [Employees].[CanVoidGiftTransactions] AS [CanVoidGiftTransactions], 
+      [Employees].[EarliestClockin] AS [EarliestClockin], 
+      [Employees].[CannotViewLocations] AS [CannotViewLocations], 
+      [Employees].[CanAddGarmentsOnEdit] AS [CanAddGarmentsOnEdit], 
+      [Employees].[CanRemoveGarmentsOnEdit] AS [CanRemoveGarmentsOnEdit]
+      FROM [dbo].[Employees] AS [Employees]</DefiningQuery>
+          </EntitySet>
+          <EntitySet Name="Orders" EntityType="Store1Model.Store.Orders" store:Type="Tables" store:Schema="dbo" store:Name="Orders">
+            <DefiningQuery>SELECT 
+      [Orders].[OrderID] AS [OrderID], 
+      [Orders].[StoreID] AS [StoreID], 
+      [Orders].[CustomerID] AS [CustomerID], 
+      [Orders].[EmployeeID] AS [EmployeeID], 
+      [Orders].[OrderDate] AS [OrderDate], 
+      [Orders].[IsFulFilled] AS [IsFulFilled], 
+      [Orders].[Deleted] AS [Deleted]
+      FROM [dbo].[Orders] AS [Orders]</DefiningQuery>
+          </EntitySet>
+        </EntityContainer>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Store1.dbo.Customers' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Customers">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="StoreID" />
+            <PropertyRef Name="IsVIP" />
+            <PropertyRef Name="FccMember" />
+            <PropertyRef Name="FccPoints" />
+            <PropertyRef Name="NoChecks" />
+            <PropertyRef Name="CanBill" />
+            <PropertyRef Name="IsTaxExempt" />
+            <PropertyRef Name="BillCycleID" />
+            <PropertyRef Name="AutoDiscount1ID" />
+            <PropertyRef Name="Deleted" />
+            <PropertyRef Name="BillToOffice" />
+            <PropertyRef Name="SOFInStore" />
+            <PropertyRef Name="NoHeatseals" />
+            <PropertyRef Name="IsFinCharged" />
+            <PropertyRef Name="BillCenterID" />
+            <PropertyRef Name="CreditLimit" />
+            <PropertyRef Name="PriceListID" />
+            <PropertyRef Name="IsPrintName" />
+            <PropertyRef Name="IsHotel" />
+            <PropertyRef Name="PrintIReminder" />
+            <PropertyRef Name="PrintPackingList" />
+            <PropertyRef Name="IsCompany" />
+            <PropertyRef Name="Language" />
+            <PropertyRef Name="CoupCount" />
+            <PropertyRef Name="Designation" />
+            <PropertyRef Name="TaxAuthorityID" />
+            <PropertyRef Name="InvoicePrintID" />
+            <PropertyRef Name="NoEmailPromos" />
+            <PropertyRef Name="KioskCannotReplaceCard" />
+            <PropertyRef Name="EmailStatements" />
+            <PropertyRef Name="PrintStatements" />
+            <PropertyRef Name="AccountType" />
+            <PropertyRef Name="PriceLevel" />
+            <PropertyRef Name="RequestsNoEmail" />
+            <PropertyRef Name="InvoiceCopies" />
+            <PropertyRef Name="PrintInvoicePrices" />
+            <PropertyRef Name="PrintInvoiceTotals" />
+            <PropertyRef Name="NoPricesOnFirstCopy" />
+            <PropertyRef Name="NoTotalsOnFirstCopy" />
+          </Key>
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="StoreID" Type="int" Nullable="false" />
+          <Property Name="LastName" Type="varchar" MaxLength="30" />
+          <Property Name="FirstName" Type="varchar" MaxLength="20" />
+          <Property Name="Addr1" Type="varchar" MaxLength="30" />
+          <Property Name="Addr2" Type="varchar" MaxLength="20" />
+          <Property Name="City" Type="varchar" MaxLength="20" />
+          <Property Name="State" Type="varchar" MaxLength="3" />
+          <Property Name="Zip" Type="varchar" MaxLength="10" />
+          <Property Name="HomePhone" Type="varchar" MaxLength="18" />
+          <Property Name="WorkPhone" Type="varchar" MaxLength="18" />
+          <Property Name="Comment" Type="varchar" MaxLength="25" />
+          <Property Name="IsVIP" Type="bit" Nullable="false" />
+          <Property Name="FccMember" Type="bit" Nullable="false" />
+          <Property Name="FccPoints" Type="int" Nullable="false" />
+          <Property Name="NoChecks" Type="bit" Nullable="false" />
+          <Property Name="CanBill" Type="bit" Nullable="false" />
+          <Property Name="ReportCode" Type="varchar" MaxLength="20" />
+          <Property Name="IsTaxExempt" Type="bit" Nullable="false" />
+          <Property Name="Starch" Type="varchar" MaxLength="1" />
+          <Property Name="Package" Type="varchar" MaxLength="1" />
+          <Property Name="InvReminder" Type="varchar" MaxLength="500" />
+          <Property Name="OpenDate" Type="datetime" />
+          <Property Name="LastOrder" Type="datetime" />
+          <Property Name="LastCashout" Type="datetime" />
+          <Property Name="BillCycleID" Type="int" Nullable="false" />
+          <Property Name="CashReminder" Type="varchar" MaxLength="500" />
+          <Property Name="AutoDiscount1ID" Type="int" Nullable="false" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="BillToOffice" Type="bit" Nullable="false" />
+          <Property Name="SOFCardNo" Type="varchar" MaxLength="80" />
+          <Property Name="SOFExpDate" Type="varchar" MaxLength="80" />
+          <Property Name="SOFInStore" Type="bit" Nullable="false" />
+          <Property Name="SOFBatch" Type="varchar" MaxLength="1" />
+          <Property Name="EMail" Type="varchar" MaxLength="500" />
+          <Property Name="NoHeatseals" Type="bit" Nullable="false" />
+          <Property Name="IsFinCharged" Type="bit" Nullable="false" />
+          <Property Name="ExtraAccount" Type="varchar" MaxLength="20" />
+          <Property Name="BillCenterID" Type="int" Nullable="false" />
+          <Property Name="CreditLimit" Type="money" Nullable="false" />
+          <Property Name="PriceListID" Type="int" Nullable="false" />
+          <Property Name="IsPrintName" Type="bit" Nullable="false" />
+          <Property Name="IsHotel" Type="bit" Nullable="false" />
+          <Property Name="PrintIReminder" Type="bit" Nullable="false" />
+          <Property Name="PrintPackingList" Type="bit" Nullable="false" />
+          <Property Name="CellPhone" Type="varchar" MaxLength="18" />
+          <Property Name="CompanyName" Type="varchar" MaxLength="40" />
+          <Property Name="IsCompany" Type="bit" Nullable="false" />
+          <Property Name="DLNumber" Type="varchar" MaxLength="20" />
+          <Property Name="Birthday" Type="datetime" />
+          <Property Name="Language" Type="int" Nullable="false" />
+          <Property Name="CoupCount" Type="int" Nullable="false" />
+          <Property Name="Designation" Type="int" Nullable="false" />
+          <Property Name="LoyaltyID" Type="varchar" MaxLength="20" />
+          <Property Name="TaxAuthorityID" Type="int" Nullable="false" />
+          <Property Name="InvoicePrintID" Type="int" Nullable="false" />
+          <Property Name="NoEmailPromos" Type="bit" Nullable="false" />
+          <Property Name="KioskCannotReplaceCard" Type="bit" Nullable="false" />
+          <Property Name="EmailStatements" Type="bit" Nullable="false" />
+          <Property Name="PrintStatements" Type="bit" Nullable="false" />
+          <Property Name="SMSAddress" Type="varchar" MaxLength="60" />
+          <Property Name="AccountType" Type="int" Nullable="false" />
+          <Property Name="PriceLevel" Type="int" Nullable="false" />
+          <Property Name="RequestsNoEmail" Type="bit" Nullable="false" />
+          <Property Name="ReadyEmail" Type="varchar" MaxLength="500" />
+          <Property Name="StatementEmail" Type="varchar" MaxLength="500" />
+          <Property Name="PromoEmail" Type="varchar" MaxLength="500" />
+          <Property Name="RouteEmail" Type="varchar" MaxLength="500" />
+          <Property Name="DiscExpiration" Type="datetime" />
+          <Property Name="BillLastName" Type="varchar" MaxLength="30" />
+          <Property Name="BillFirstName" Type="varchar" MaxLength="20" />
+          <Property Name="BillAddr1" Type="varchar" MaxLength="30" />
+          <Property Name="BillAddr2" Type="varchar" MaxLength="20" />
+          <Property Name="BillCity" Type="varchar" MaxLength="20" />
+          <Property Name="BillState" Type="varchar" MaxLength="3" />
+          <Property Name="BillZip" Type="varchar" MaxLength="10" />
+          <Property Name="Notes" Type="varchar" MaxLength="500" />
+          <Property Name="InvoiceCopies" Type="int" Nullable="false" />
+          <Property Name="PrintInvoicePrices" Type="bit" Nullable="false" />
+          <Property Name="PrintInvoiceTotals" Type="bit" Nullable="false" />
+          <Property Name="NoPricesOnFirstCopy" Type="bit" Nullable="false" />
+          <Property Name="NoTotalsOnFirstCopy" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Store1.dbo.Employees' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Employees">
+          <Key>
+            <PropertyRef Name="ClocksIn" />
+            <PropertyRef Name="DeniedAccess" />
+            <PropertyRef Name="NoDrawer" />
+            <PropertyRef Name="FullTime" />
+            <PropertyRef Name="Deleted" />
+            <PropertyRef Name="EditInvoicePrices" />
+            <PropertyRef Name="EditCustAccData" />
+            <PropertyRef Name="CashOutAccounts" />
+            <PropertyRef Name="LogTransactions" />
+            <PropertyRef Name="EditCustDisc" />
+            <PropertyRef Name="CanVoidInvoices" />
+            <PropertyRef Name="CanCloseDay" />
+            <PropertyRef Name="NoCouponAdj" />
+            <PropertyRef Name="CannotCloseDrawers" />
+            <PropertyRef Name="CannotPrintAudit" />
+            <PropertyRef Name="CanAdjustAccounts" />
+            <PropertyRef Name="CanPrintDailyReport" />
+            <PropertyRef Name="CannotPrintDrawer" />
+            <PropertyRef Name="CannotMakeChange" />
+            <PropertyRef Name="CannotCashCheck" />
+            <PropertyRef Name="CannotDisburseCash" />
+            <PropertyRef Name="CannotAddCash" />
+            <PropertyRef Name="CannotViewTimeCard" />
+            <PropertyRef Name="CanEditInvoices" />
+            <PropertyRef Name="CannotEditEmployees" />
+            <PropertyRef Name="CannotDeleteEmployees" />
+            <PropertyRef Name="CannotEditTimeCards" />
+            <PropertyRef Name="CannotEditEmpAccess" />
+            <PropertyRef Name="CannotEditEmpCashDrawer" />
+            <PropertyRef Name="CannotEditPriceList" />
+            <PropertyRef Name="CannotEditDepartments" />
+            <PropertyRef Name="CannotEditCategories" />
+            <PropertyRef Name="CannotEditGarments" />
+            <PropertyRef Name="CannotEditUpcharges" />
+            <PropertyRef Name="CannotEditDiscountsFees" />
+            <PropertyRef Name="CannotEditMerchandise" />
+            <PropertyRef Name="CannotPrintManagerRpts" />
+            <PropertyRef Name="CannotPrintEmpLog" />
+            <PropertyRef Name="CannotPrintSales" />
+            <PropertyRef Name="CannotPrintFinancials" />
+            <PropertyRef Name="CannotPrintTracking" />
+            <PropertyRef Name="CannotPrintDrawers" />
+            <PropertyRef Name="EmpTimeOut" />
+            <PropertyRef Name="CannotDoPhysical" />
+            <PropertyRef Name="CannotSetupEmail" />
+            <PropertyRef Name="CanLowerPricesOnEdit" />
+            <PropertyRef Name="EditCustSalesTax" />
+            <PropertyRef Name="EditCustCheckWrite" />
+            <PropertyRef Name="CanInventoryBillOut" />
+            <PropertyRef Name="CanAddRemoveGarmentsOnEdit" />
+            <PropertyRef Name="CanAssignCustPLevels" />
+            <PropertyRef Name="CanSelectPLevelsInvoicing" />
+            <PropertyRef Name="CanSelectPLevelsEditing" />
+            <PropertyRef Name="CanEditCCOnFile" />
+            <PropertyRef Name="CanMPSBrowse" />
+            <PropertyRef Name="CanIssueVoidCCDebitsCredits" />
+            <PropertyRef Name="IsWinUser" />
+            <PropertyRef Name="IsLocked" />
+            <PropertyRef Name="CanDeleteCustomers" />
+            <PropertyRef Name="CanEditCustEmail" />
+            <PropertyRef Name="CanSendACustomerEmail" />
+            <PropertyRef Name="CanEditLoyaltyPts" />
+            <PropertyRef Name="CanEditCustInvoiceSettings" />
+            <PropertyRef Name="CanViewCustActivity" />
+            <PropertyRef Name="CanIssueAwardCards" />
+            <PropertyRef Name="CanReloadAwardCards" />
+            <PropertyRef Name="CanReloadPurchaseCards" />
+            <PropertyRef Name="CanVoidGiftTransactions" />
+            <PropertyRef Name="CannotViewLocations" />
+            <PropertyRef Name="CanAddGarmentsOnEdit" />
+            <PropertyRef Name="CanRemoveGarmentsOnEdit" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" />
+          <Property Name="DrawerStation" Type="int" />
+          <Property Name="LastName" Type="varchar" MaxLength="30" />
+          <Property Name="FirstName" Type="varchar" MaxLength="15" />
+          <Property Name="ClocksIn" Type="bit" Nullable="false" />
+          <Property Name="Password" Type="varchar" MaxLength="8" />
+          <Property Name="DeniedAccess" Type="bit" Nullable="false" />
+          <Property Name="NoDrawer" Type="bit" Nullable="false" />
+          <Property Name="SalaryRate" Type="money" />
+          <Property Name="FullTime" Type="bit" Nullable="false" />
+          <Property Name="LastRaise" Type="datetime" />
+          <Property Name="Department" Type="varchar" MaxLength="15" />
+          <Property Name="SecurityLevel" Type="int" />
+          <Property Name="DrawerNumber" Type="int" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+          <Property Name="EditInvoicePrices" Type="bit" Nullable="false" />
+          <Property Name="EditCustAccData" Type="bit" Nullable="false" />
+          <Property Name="CashOutAccounts" Type="bit" Nullable="false" />
+          <Property Name="LogTransactions" Type="bit" Nullable="false" />
+          <Property Name="PieceRate" Type="money" />
+          <Property Name="PieceRateLaundry" Type="money" />
+          <Property Name="PieceRateDryclean" Type="money" />
+          <Property Name="EditCustDisc" Type="bit" Nullable="false" />
+          <Property Name="CanVoidInvoices" Type="bit" Nullable="false" />
+          <Property Name="CanCloseDay" Type="bit" Nullable="false" />
+          <Property Name="NoCouponAdj" Type="bit" Nullable="false" />
+          <Property Name="CannotCloseDrawers" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintAudit" Type="bit" Nullable="false" />
+          <Property Name="CanAdjustAccounts" Type="bit" Nullable="false" />
+          <Property Name="CanPrintDailyReport" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintDrawer" Type="bit" Nullable="false" />
+          <Property Name="CannotMakeChange" Type="bit" Nullable="false" />
+          <Property Name="CannotCashCheck" Type="bit" Nullable="false" />
+          <Property Name="CannotDisburseCash" Type="bit" Nullable="false" />
+          <Property Name="CannotAddCash" Type="bit" Nullable="false" />
+          <Property Name="CannotViewTimeCard" Type="bit" Nullable="false" />
+          <Property Name="CanEditInvoices" Type="bit" Nullable="false" />
+          <Property Name="CannotEditEmployees" Type="bit" Nullable="false" />
+          <Property Name="CannotDeleteEmployees" Type="bit" Nullable="false" />
+          <Property Name="CannotEditTimeCards" Type="bit" Nullable="false" />
+          <Property Name="CannotEditEmpAccess" Type="bit" Nullable="false" />
+          <Property Name="CannotEditEmpCashDrawer" Type="bit" Nullable="false" />
+          <Property Name="CannotEditPriceList" Type="bit" Nullable="false" />
+          <Property Name="CannotEditDepartments" Type="bit" Nullable="false" />
+          <Property Name="CannotEditCategories" Type="bit" Nullable="false" />
+          <Property Name="CannotEditGarments" Type="bit" Nullable="false" />
+          <Property Name="CannotEditUpcharges" Type="bit" Nullable="false" />
+          <Property Name="CannotEditDiscountsFees" Type="bit" Nullable="false" />
+          <Property Name="CannotEditMerchandise" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintManagerRpts" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintEmpLog" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintSales" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintFinancials" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintTracking" Type="bit" Nullable="false" />
+          <Property Name="CannotPrintDrawers" Type="bit" Nullable="false" />
+          <Property Name="EmpTimeOut" Type="int" Nullable="false" />
+          <Property Name="CannotDoPhysical" Type="bit" Nullable="false" />
+          <Property Name="CannotSetupEmail" Type="bit" Nullable="false" />
+          <Property Name="CanLowerPricesOnEdit" Type="bit" Nullable="false" />
+          <Property Name="EditCustSalesTax" Type="bit" Nullable="false" />
+          <Property Name="EditCustCheckWrite" Type="bit" Nullable="false" />
+          <Property Name="CanInventoryBillOut" Type="bit" Nullable="false" />
+          <Property Name="Email" Type="varchar" MaxLength="80" />
+          <Property Name="CanAddRemoveGarmentsOnEdit" Type="bit" Nullable="false" />
+          <Property Name="CanAssignCustPLevels" Type="bit" Nullable="false" />
+          <Property Name="CanSelectPLevelsInvoicing" Type="bit" Nullable="false" />
+          <Property Name="CanSelectPLevelsEditing" Type="bit" Nullable="false" />
+          <Property Name="CanEditCCOnFile" Type="bit" Nullable="false" />
+          <Property Name="CanMPSBrowse" Type="bit" Nullable="false" />
+          <Property Name="CanIssueVoidCCDebitsCredits" Type="bit" Nullable="false" />
+          <Property Name="UserName" Type="varchar" MaxLength="50" />
+          <Property Name="UserPIN" Type="varchar" MaxLength="32" />
+          <Property Name="UserPassword" Type="varchar" MaxLength="32" />
+          <Property Name="UserSalt" Type="varchar" MaxLength="16" />
+          <Property Name="SecretQuestion" Type="varchar" MaxLength="50" />
+          <Property Name="SecretAnswer" Type="varchar" MaxLength="32" />
+          <Property Name="LastReset" Type="datetime" />
+          <Property Name="Domain" Type="varchar" MaxLength="50" />
+          <Property Name="IsWinUser" Type="bit" Nullable="false" />
+          <Property Name="IsLocked" Type="bit" Nullable="false" />
+          <Property Name="LockDate" Type="datetime" />
+          <Property Name="CanDeleteCustomers" Type="bit" Nullable="false" />
+          <Property Name="CanEditCustEmail" Type="bit" Nullable="false" />
+          <Property Name="CanSendACustomerEmail" Type="bit" Nullable="false" />
+          <Property Name="CanEditLoyaltyPts" Type="bit" Nullable="false" />
+          <Property Name="CanEditCustInvoiceSettings" Type="bit" Nullable="false" />
+          <Property Name="CanViewCustActivity" Type="bit" Nullable="false" />
+          <Property Name="CanIssueAwardCards" Type="bit" Nullable="false" />
+          <Property Name="CanReloadAwardCards" Type="bit" Nullable="false" />
+          <Property Name="CanReloadPurchaseCards" Type="bit" Nullable="false" />
+          <Property Name="CanVoidGiftTransactions" Type="bit" Nullable="false" />
+          <Property Name="EarliestClockin" Type="datetime" />
+          <Property Name="CannotViewLocations" Type="bit" Nullable="false" />
+          <Property Name="CanAddGarmentsOnEdit" Type="bit" Nullable="false" />
+          <Property Name="CanRemoveGarmentsOnEdit" Type="bit" Nullable="false" />
+        </EntityType>
+        <!--Errors Found During Generation:
+      warning 6002: The table/view 'Store1.dbo.Orders' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.
+      -->
+        <EntityType Name="Orders">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="StoreID" />
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="EmployeeID" />
+            <PropertyRef Name="IsFulFilled" />
+            <PropertyRef Name="Deleted" />
+          </Key>
+          <Property Name="OrderID" Type="int" Nullable="false" />
+          <Property Name="StoreID" Type="int" Nullable="false" />
+          <Property Name="CustomerID" Type="int" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="OrderDate" Type="datetime" />
+          <Property Name="IsFulFilled" Type="bit" Nullable="false" />
+          <Property Name="Deleted" Type="bit" Nullable="false" />
+        </EntityType>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="Store1Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Store1Entities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="Customers" EntityType="Store1Model.Customer" />
+          <EntitySet Name="Orders" EntityType="Store1Model.Order" />
+          <EntitySet Name="Employees" EntityType="Store1Model.Employee" />
+        </EntityContainer>
+        <EntityType Name="Customer">
+          <Key>
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="StoreID" />
+            <PropertyRef Name="IsVIP" />
+            <PropertyRef Name="FccMember" />
+            <PropertyRef Name="FccPoints" />
+            <PropertyRef Name="NoChecks" />
+            <PropertyRef Name="CanBill" />
+            <PropertyRef Name="IsTaxExempt" />
+            <PropertyRef Name="BillCycleID" />
+            <PropertyRef Name="AutoDiscount1ID" />
+            <PropertyRef Name="Deleted" />
+            <PropertyRef Name="BillToOffice" />
+            <PropertyRef Name="SOFInStore" />
+            <PropertyRef Name="NoHeatseals" />
+            <PropertyRef Name="IsFinCharged" />
+            <PropertyRef Name="BillCenterID" />
+            <PropertyRef Name="CreditLimit" />
+            <PropertyRef Name="PriceListID" />
+            <PropertyRef Name="IsPrintName" />
+            <PropertyRef Name="IsHotel" />
+            <PropertyRef Name="PrintIReminder" />
+            <PropertyRef Name="PrintPackingList" />
+            <PropertyRef Name="IsCompany" />
+            <PropertyRef Name="Language" />
+            <PropertyRef Name="CoupCount" />
+            <PropertyRef Name="Designation" />
+            <PropertyRef Name="TaxAuthorityID" />
+            <PropertyRef Name="InvoicePrintID" />
+            <PropertyRef Name="NoEmailPromos" />
+            <PropertyRef Name="KioskCannotReplaceCard" />
+            <PropertyRef Name="EmailStatements" />
+            <PropertyRef Name="PrintStatements" />
+            <PropertyRef Name="AccountType" />
+            <PropertyRef Name="PriceLevel" />
+            <PropertyRef Name="RequestsNoEmail" />
+            <PropertyRef Name="InvoiceCopies" />
+            <PropertyRef Name="PrintInvoicePrices" />
+            <PropertyRef Name="PrintInvoiceTotals" />
+            <PropertyRef Name="NoPricesOnFirstCopy" />
+            <PropertyRef Name="NoTotalsOnFirstCopy" />
+          </Key>
+          <Property Name="CustomerID" Type="Int32" Nullable="false" />
+          <Property Name="StoreID" Type="Int32" Nullable="false" />
+          <Property Name="LastName" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="FirstName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Addr1" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+          <Property Name="Addr2" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="City" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="State" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+          <Property Name="Zip" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="HomePhone" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="WorkPhone" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="Comment" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+          <Property Name="IsVIP" Type="Boolean" Nullable="false" />
+          <Property Name="FccMember" Type="Boolean" Nullable="false" />
+          <Property Name="FccPoints" Type="Int32" Nullable="false" />
+          <Property Name="NoChecks" Type="Boolean" Nullable="false" />
+          <Property Name="CanBill" Type="Boolean" Nullable="false" />
+          <Property Name="ReportCode" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="IsTaxExempt" Type="Boolean" Nullable="false" />
+          <Property Name="Starch" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="Package" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="InvReminder" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="OpenDate" Type="DateTime" Precision="3" />
+          <Property Name="LastOrder" Type="DateTime" Precision="3" />
+          <Property Name="LastCashout" Type="DateTime" Precision="3" />
+          <Property Name="BillCycleID" Type="Int32" Nullable="false" />
+          <Property Name="CashReminder" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="AutoDiscount1ID" Type="Int32" Nullable="false" />
+          <Property Name="Deleted" Type="Boolean" Nullable="false" />
+          <Property Name="BillToOffice" Type="Boolean" Nullable="false" />
+          <Property Name="SOFCardNo" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="SOFExpDate" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+          <Property Name="SOFInStore" Type="Boolean" Nullable="false" />
+          <Property Name="SOFBatch" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+          <Property Name="EMail" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="NoHeatseals" Type="Boolean" Nullable="false" />
+          <Property Name="IsFinCharged" Type="Boolean" Nullable="false" />
+          <Property Name="ExtraAccount" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="BillCenterID" Type="Int32" Nullable="false" />
+          <Property Name="CreditLimit" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+          <Property Name="PriceListID" Type="Int32" Nullable="false" />
+          <Property Name="IsPrintName" Type="Boolean" Nullable="false" />
+          <Property Name="IsHotel" Type="Boolean" Nullable="false" />
+          <Property Name="PrintIReminder" Type="Boolean" Nullable="false" />
+          <Property Name="PrintPackingList" Type="Boolean" Nullable="false" />
+          <Property Name="CellPhone" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+          <Property Name="CompanyName" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+          <Property Name="IsCompany" Type="Boolean" Nullable="false" />
+          <Property Name="DLNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="Birthday" Type="DateTime" Precision="3" />
+          <Property Name="Language" Type="Int32" Nullable="false" />
+          <Property Name="CoupCount" Type="Int32" Nullable="false" />
+          <Property Name="Designation" Type="Int32" Nullable="false" />
+          <Property Name="LoyaltyID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="TaxAuthorityID" Type="Int32" Nullable="false" />
+          <Property Name="InvoicePrintID" Type="Int32" Nullable="false" />
+          <Property Name="NoEmailPromos" Type="Boolean" Nullable="false" />
+          <Property Name="KioskCannotReplaceCard" Type="Boolean" Nullable="false" />
+          <Property Name="EmailStatements" Type="Boolean" Nullable="false" />
+          <Property Name="PrintStatements" Type="Boolean" Nullable="false" />
+          <Property Name="SMSAddress" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+          <Property Name="AccountType" Type="Int32" Nullable="false" />
+          <Property Name="PriceLevel" Type="Int32" Nullable="false" />
+          <Property Type="Boolean" Name="RequestsNoEmail" Nullable="false" />
+          <Property Type="String" Name="ReadyEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="StatementEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="PromoEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="RouteEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="DiscExpiration" Precision="3" />
+          <Property Type="String" Name="BillLastName" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BillFirstName" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BillAddr1" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BillAddr2" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BillCity" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BillState" MaxLength="3" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="BillZip" MaxLength="10" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="Notes" MaxLength="500" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="InvoiceCopies" Nullable="false" />
+          <Property Type="Boolean" Name="PrintInvoicePrices" Nullable="false" />
+          <Property Type="Boolean" Name="PrintInvoiceTotals" Nullable="false" />
+          <Property Type="Boolean" Name="NoPricesOnFirstCopy" Nullable="false" />
+          <Property Type="Boolean" Name="NoTotalsOnFirstCopy" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Order">
+          <Key>
+            <PropertyRef Name="OrderID" />
+            <PropertyRef Name="StoreID" />
+            <PropertyRef Name="CustomerID" />
+            <PropertyRef Name="EmployeeID" />
+            <PropertyRef Name="IsFulFilled" />
+            <PropertyRef Name="Deleted" />
+          </Key>
+          <Property Type="Int32" Name="OrderID" Nullable="false" />
+          <Property Type="Int32" Name="StoreID" Nullable="false" />
+          <Property Type="Int32" Name="CustomerID" Nullable="false" />
+          <Property Type="Int32" Name="EmployeeID" Nullable="false" />
+          <Property Type="DateTime" Name="OrderDate" Precision="3" />
+          <Property Type="Boolean" Name="IsFulFilled" Nullable="false" />
+          <Property Type="Boolean" Name="Deleted" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ClocksIn" />
+            <PropertyRef Name="DeniedAccess" />
+            <PropertyRef Name="NoDrawer" />
+            <PropertyRef Name="FullTime" />
+            <PropertyRef Name="Deleted" />
+            <PropertyRef Name="EditInvoicePrices" />
+            <PropertyRef Name="EditCustAccData" />
+            <PropertyRef Name="CashOutAccounts" />
+            <PropertyRef Name="LogTransactions" />
+            <PropertyRef Name="EditCustDisc" />
+            <PropertyRef Name="CanVoidInvoices" />
+            <PropertyRef Name="CanCloseDay" />
+            <PropertyRef Name="NoCouponAdj" />
+            <PropertyRef Name="CannotCloseDrawers" />
+            <PropertyRef Name="CannotPrintAudit" />
+            <PropertyRef Name="CanAdjustAccounts" />
+            <PropertyRef Name="CanPrintDailyReport" />
+            <PropertyRef Name="CannotPrintDrawer" />
+            <PropertyRef Name="CannotMakeChange" />
+            <PropertyRef Name="CannotCashCheck" />
+            <PropertyRef Name="CannotDisburseCash" />
+            <PropertyRef Name="CannotAddCash" />
+            <PropertyRef Name="CannotViewTimeCard" />
+            <PropertyRef Name="CanEditInvoices" />
+            <PropertyRef Name="CannotEditEmployees" />
+            <PropertyRef Name="CannotDeleteEmployees" />
+            <PropertyRef Name="CannotEditTimeCards" />
+            <PropertyRef Name="CannotEditEmpAccess" />
+            <PropertyRef Name="CannotEditEmpCashDrawer" />
+            <PropertyRef Name="CannotEditPriceList" />
+            <PropertyRef Name="CannotEditDepartments" />
+            <PropertyRef Name="CannotEditCategories" />
+            <PropertyRef Name="CannotEditGarments" />
+            <PropertyRef Name="CannotEditUpcharges" />
+            <PropertyRef Name="CannotEditDiscountsFees" />
+            <PropertyRef Name="CannotEditMerchandise" />
+            <PropertyRef Name="CannotPrintManagerRpts" />
+            <PropertyRef Name="CannotPrintEmpLog" />
+            <PropertyRef Name="CannotPrintSales" />
+            <PropertyRef Name="CannotPrintFinancials" />
+            <PropertyRef Name="CannotPrintTracking" />
+            <PropertyRef Name="CannotPrintDrawers" />
+            <PropertyRef Name="EmpTimeOut" />
+            <PropertyRef Name="CannotDoPhysical" />
+            <PropertyRef Name="CannotSetupEmail" />
+            <PropertyRef Name="CanLowerPricesOnEdit" />
+            <PropertyRef Name="EditCustSalesTax" />
+            <PropertyRef Name="EditCustCheckWrite" />
+            <PropertyRef Name="CanInventoryBillOut" />
+            <PropertyRef Name="CanAddRemoveGarmentsOnEdit" />
+            <PropertyRef Name="CanAssignCustPLevels" />
+            <PropertyRef Name="CanSelectPLevelsInvoicing" />
+            <PropertyRef Name="CanSelectPLevelsEditing" />
+            <PropertyRef Name="CanEditCCOnFile" />
+            <PropertyRef Name="CanMPSBrowse" />
+            <PropertyRef Name="CanIssueVoidCCDebitsCredits" />
+            <PropertyRef Name="IsWinUser" />
+            <PropertyRef Name="IsLocked" />
+            <PropertyRef Name="CanDeleteCustomers" />
+            <PropertyRef Name="CanEditCustEmail" />
+            <PropertyRef Name="CanSendACustomerEmail" />
+            <PropertyRef Name="CanEditLoyaltyPts" />
+            <PropertyRef Name="CanEditCustInvoiceSettings" />
+            <PropertyRef Name="CanViewCustActivity" />
+            <PropertyRef Name="CanIssueAwardCards" />
+            <PropertyRef Name="CanReloadAwardCards" />
+            <PropertyRef Name="CanReloadPurchaseCards" />
+            <PropertyRef Name="CanVoidGiftTransactions" />
+            <PropertyRef Name="CannotViewLocations" />
+            <PropertyRef Name="CanAddGarmentsOnEdit" />
+            <PropertyRef Name="CanRemoveGarmentsOnEdit" />
+          </Key>
+          <Property Type="Int32" Name="EmployeeID" />
+          <Property Type="Int32" Name="DrawerStation" />
+          <Property Type="String" Name="LastName" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="FirstName" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="ClocksIn" Nullable="false" />
+          <Property Type="String" Name="Password" MaxLength="8" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="DeniedAccess" Nullable="false" />
+          <Property Type="Boolean" Name="NoDrawer" Nullable="false" />
+          <Property Type="Decimal" Name="SalaryRate" Precision="19" Scale="4" />
+          <Property Type="Boolean" Name="FullTime" Nullable="false" />
+          <Property Type="DateTime" Name="LastRaise" Precision="3" />
+          <Property Type="String" Name="Department" MaxLength="15" FixedLength="false" Unicode="false" />
+          <Property Type="Int32" Name="SecurityLevel" />
+          <Property Type="Int32" Name="DrawerNumber" />
+          <Property Type="Boolean" Name="Deleted" Nullable="false" />
+          <Property Type="Boolean" Name="EditInvoicePrices" Nullable="false" />
+          <Property Type="Boolean" Name="EditCustAccData" Nullable="false" />
+          <Property Type="Boolean" Name="CashOutAccounts" Nullable="false" />
+          <Property Type="Boolean" Name="LogTransactions" Nullable="false" />
+          <Property Type="Decimal" Name="PieceRate" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="PieceRateLaundry" Precision="19" Scale="4" />
+          <Property Type="Decimal" Name="PieceRateDryclean" Precision="19" Scale="4" />
+          <Property Type="Boolean" Name="EditCustDisc" Nullable="false" />
+          <Property Type="Boolean" Name="CanVoidInvoices" Nullable="false" />
+          <Property Type="Boolean" Name="CanCloseDay" Nullable="false" />
+          <Property Type="Boolean" Name="NoCouponAdj" Nullable="false" />
+          <Property Type="Boolean" Name="CannotCloseDrawers" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintAudit" Nullable="false" />
+          <Property Type="Boolean" Name="CanAdjustAccounts" Nullable="false" />
+          <Property Type="Boolean" Name="CanPrintDailyReport" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintDrawer" Nullable="false" />
+          <Property Type="Boolean" Name="CannotMakeChange" Nullable="false" />
+          <Property Type="Boolean" Name="CannotCashCheck" Nullable="false" />
+          <Property Type="Boolean" Name="CannotDisburseCash" Nullable="false" />
+          <Property Type="Boolean" Name="CannotAddCash" Nullable="false" />
+          <Property Type="Boolean" Name="CannotViewTimeCard" Nullable="false" />
+          <Property Type="Boolean" Name="CanEditInvoices" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditEmployees" Nullable="false" />
+          <Property Type="Boolean" Name="CannotDeleteEmployees" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditTimeCards" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditEmpAccess" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditEmpCashDrawer" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditPriceList" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditDepartments" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditCategories" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditGarments" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditUpcharges" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditDiscountsFees" Nullable="false" />
+          <Property Type="Boolean" Name="CannotEditMerchandise" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintManagerRpts" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintEmpLog" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintSales" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintFinancials" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintTracking" Nullable="false" />
+          <Property Type="Boolean" Name="CannotPrintDrawers" Nullable="false" />
+          <Property Type="Int32" Name="EmpTimeOut" Nullable="false" />
+          <Property Type="Boolean" Name="CannotDoPhysical" Nullable="false" />
+          <Property Type="Boolean" Name="CannotSetupEmail" Nullable="false" />
+          <Property Type="Boolean" Name="CanLowerPricesOnEdit" Nullable="false" />
+          <Property Type="Boolean" Name="EditCustSalesTax" Nullable="false" />
+          <Property Type="Boolean" Name="EditCustCheckWrite" Nullable="false" />
+          <Property Type="Boolean" Name="CanInventoryBillOut" Nullable="false" />
+          <Property Type="String" Name="Email" MaxLength="80" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="CanAddRemoveGarmentsOnEdit" Nullable="false" />
+          <Property Type="Boolean" Name="CanAssignCustPLevels" Nullable="false" />
+          <Property Type="Boolean" Name="CanSelectPLevelsInvoicing" Nullable="false" />
+          <Property Type="Boolean" Name="CanSelectPLevelsEditing" Nullable="false" />
+          <Property Type="Boolean" Name="CanEditCCOnFile" Nullable="false" />
+          <Property Type="Boolean" Name="CanMPSBrowse" Nullable="false" />
+          <Property Type="Boolean" Name="CanIssueVoidCCDebitsCredits" Nullable="false" />
+          <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserPIN" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserPassword" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="UserSalt" MaxLength="16" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SecretQuestion" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="String" Name="SecretAnswer" MaxLength="32" FixedLength="false" Unicode="false" />
+          <Property Type="DateTime" Name="LastReset" Precision="3" />
+          <Property Type="String" Name="Domain" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Type="Boolean" Name="IsWinUser" Nullable="false" />
+          <Property Type="Boolean" Name="IsLocked" Nullable="false" />
+          <Property Type="DateTime" Name="LockDate" Precision="3" />
+          <Property Type="Boolean" Name="CanDeleteCustomers" Nullable="false" />
+          <Property Type="Boolean" Name="CanEditCustEmail" Nullable="false" />
+          <Property Type="Boolean" Name="CanSendACustomerEmail" Nullable="false" />
+          <Property Type="Boolean" Name="CanEditLoyaltyPts" Nullable="false" />
+          <Property Type="Boolean" Name="CanEditCustInvoiceSettings" Nullable="false" />
+          <Property Type="Boolean" Name="CanViewCustActivity" Nullable="false" />
+          <Property Type="Boolean" Name="CanIssueAwardCards" Nullable="false" />
+          <Property Type="Boolean" Name="CanReloadAwardCards" Nullable="false" />
+          <Property Type="Boolean" Name="CanReloadPurchaseCards" Nullable="false" />
+          <Property Type="Boolean" Name="CanVoidGiftTransactions" Nullable="false" />
+          <Property Type="DateTime" Name="EarliestClockin" Precision="3" />
+          <Property Type="Boolean" Name="CannotViewLocations" Nullable="false" />
+          <Property Type="Boolean" Name="CanAddGarmentsOnEdit" Nullable="false" />
+          <Property Type="Boolean" Name="CanRemoveGarmentsOnEdit" Nullable="false" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="Store1ModelStoreContainer" CdmEntityContainer="Store1Entities">
+          <EntitySetMapping Name="Customers"><EntityTypeMapping TypeName="Store1Model.Customer"><MappingFragment StoreEntitySet="Customers">
+            <ScalarProperty Name="NoTotalsOnFirstCopy" ColumnName="NoTotalsOnFirstCopy" />
+                <ScalarProperty Name="NoPricesOnFirstCopy" ColumnName="NoPricesOnFirstCopy" />
+                <ScalarProperty Name="PrintInvoiceTotals" ColumnName="PrintInvoiceTotals" />
+                <ScalarProperty Name="PrintInvoicePrices" ColumnName="PrintInvoicePrices" />
+                <ScalarProperty Name="InvoiceCopies" ColumnName="InvoiceCopies" />
+                <ScalarProperty Name="Notes" ColumnName="Notes" />
+                <ScalarProperty Name="BillZip" ColumnName="BillZip" />
+                <ScalarProperty Name="BillState" ColumnName="BillState" />
+                <ScalarProperty Name="BillCity" ColumnName="BillCity" />
+                <ScalarProperty Name="BillAddr2" ColumnName="BillAddr2" />
+                <ScalarProperty Name="BillAddr1" ColumnName="BillAddr1" />
+                <ScalarProperty Name="BillFirstName" ColumnName="BillFirstName" />
+                <ScalarProperty Name="BillLastName" ColumnName="BillLastName" />
+                <ScalarProperty Name="DiscExpiration" ColumnName="DiscExpiration" />
+                <ScalarProperty Name="RouteEmail" ColumnName="RouteEmail" />
+                <ScalarProperty Name="PromoEmail" ColumnName="PromoEmail" />
+                <ScalarProperty Name="StatementEmail" ColumnName="StatementEmail" />
+                <ScalarProperty Name="ReadyEmail" ColumnName="ReadyEmail" />
+                <ScalarProperty Name="RequestsNoEmail" ColumnName="RequestsNoEmail" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+            <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+            <ScalarProperty Name="LastName" ColumnName="LastName" />
+            <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+            <ScalarProperty Name="Addr1" ColumnName="Addr1" />
+            <ScalarProperty Name="Addr2" ColumnName="Addr2" />
+            <ScalarProperty Name="City" ColumnName="City" />
+            <ScalarProperty Name="State" ColumnName="State" />
+            <ScalarProperty Name="Zip" ColumnName="Zip" />
+            <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+            <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+            <ScalarProperty Name="Comment" ColumnName="Comment" />
+            <ScalarProperty Name="IsVIP" ColumnName="IsVIP" />
+            <ScalarProperty Name="FccMember" ColumnName="FccMember" />
+            <ScalarProperty Name="FccPoints" ColumnName="FccPoints" />
+            <ScalarProperty Name="NoChecks" ColumnName="NoChecks" />
+            <ScalarProperty Name="CanBill" ColumnName="CanBill" />
+            <ScalarProperty Name="ReportCode" ColumnName="ReportCode" />
+            <ScalarProperty Name="IsTaxExempt" ColumnName="IsTaxExempt" />
+            <ScalarProperty Name="Starch" ColumnName="Starch" />
+            <ScalarProperty Name="Package" ColumnName="Package" />
+            <ScalarProperty Name="InvReminder" ColumnName="InvReminder" />
+            <ScalarProperty Name="OpenDate" ColumnName="OpenDate" />
+            <ScalarProperty Name="LastOrder" ColumnName="LastOrder" />
+            <ScalarProperty Name="LastCashout" ColumnName="LastCashout" />
+            <ScalarProperty Name="BillCycleID" ColumnName="BillCycleID" />
+            <ScalarProperty Name="CashReminder" ColumnName="CashReminder" />
+            <ScalarProperty Name="AutoDiscount1ID" ColumnName="AutoDiscount1ID" />
+            <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+            <ScalarProperty Name="BillToOffice" ColumnName="BillToOffice" />
+            <ScalarProperty Name="SOFCardNo" ColumnName="SOFCardNo" />
+            <ScalarProperty Name="SOFExpDate" ColumnName="SOFExpDate" />
+            <ScalarProperty Name="SOFInStore" ColumnName="SOFInStore" />
+            <ScalarProperty Name="SOFBatch" ColumnName="SOFBatch" />
+            <ScalarProperty Name="EMail" ColumnName="EMail" />
+            <ScalarProperty Name="NoHeatseals" ColumnName="NoHeatseals" />
+            <ScalarProperty Name="IsFinCharged" ColumnName="IsFinCharged" />
+            <ScalarProperty Name="ExtraAccount" ColumnName="ExtraAccount" />
+            <ScalarProperty Name="BillCenterID" ColumnName="BillCenterID" />
+            <ScalarProperty Name="CreditLimit" ColumnName="CreditLimit" />
+            <ScalarProperty Name="PriceListID" ColumnName="PriceListID" />
+            <ScalarProperty Name="IsPrintName" ColumnName="IsPrintName" />
+            <ScalarProperty Name="IsHotel" ColumnName="IsHotel" />
+            <ScalarProperty Name="PrintIReminder" ColumnName="PrintIReminder" />
+            <ScalarProperty Name="PrintPackingList" ColumnName="PrintPackingList" />
+            <ScalarProperty Name="CellPhone" ColumnName="CellPhone" />
+            <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
+            <ScalarProperty Name="IsCompany" ColumnName="IsCompany" />
+            <ScalarProperty Name="DLNumber" ColumnName="DLNumber" />
+            <ScalarProperty Name="Birthday" ColumnName="Birthday" />
+            <ScalarProperty Name="Language" ColumnName="Language" />
+            <ScalarProperty Name="CoupCount" ColumnName="CoupCount" />
+            <ScalarProperty Name="Designation" ColumnName="Designation" />
+            <ScalarProperty Name="LoyaltyID" ColumnName="LoyaltyID" />
+            <ScalarProperty Name="TaxAuthorityID" ColumnName="TaxAuthorityID" />
+            <ScalarProperty Name="InvoicePrintID" ColumnName="InvoicePrintID" />
+            <ScalarProperty Name="NoEmailPromos" ColumnName="NoEmailPromos" />
+            <ScalarProperty Name="KioskCannotReplaceCard" ColumnName="KioskCannotReplaceCard" />
+            <ScalarProperty Name="EmailStatements" ColumnName="EmailStatements" />
+            <ScalarProperty Name="PrintStatements" ColumnName="PrintStatements" />
+            <ScalarProperty Name="SMSAddress" ColumnName="SMSAddress" />
+            <ScalarProperty Name="AccountType" ColumnName="AccountType" />
+            <ScalarProperty Name="PriceLevel" ColumnName="PriceLevel" />
+          </MappingFragment></EntityTypeMapping></EntitySetMapping>
+          <EntitySetMapping Name="Orders">
+            <EntityTypeMapping TypeName="Store1Model.Order">
+              <MappingFragment StoreEntitySet="Orders">
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="IsFulFilled" ColumnName="IsFulFilled" />
+                <ScalarProperty Name="OrderDate" ColumnName="OrderDate" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+                <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+                <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employees">
+            <EntityTypeMapping TypeName="Store1Model.Employee">
+              <MappingFragment StoreEntitySet="Employees">
+                <ScalarProperty Name="CanRemoveGarmentsOnEdit" ColumnName="CanRemoveGarmentsOnEdit" />
+                <ScalarProperty Name="CanAddGarmentsOnEdit" ColumnName="CanAddGarmentsOnEdit" />
+                <ScalarProperty Name="CannotViewLocations" ColumnName="CannotViewLocations" />
+                <ScalarProperty Name="EarliestClockin" ColumnName="EarliestClockin" />
+                <ScalarProperty Name="CanVoidGiftTransactions" ColumnName="CanVoidGiftTransactions" />
+                <ScalarProperty Name="CanReloadPurchaseCards" ColumnName="CanReloadPurchaseCards" />
+                <ScalarProperty Name="CanReloadAwardCards" ColumnName="CanReloadAwardCards" />
+                <ScalarProperty Name="CanIssueAwardCards" ColumnName="CanIssueAwardCards" />
+                <ScalarProperty Name="CanViewCustActivity" ColumnName="CanViewCustActivity" />
+                <ScalarProperty Name="CanEditCustInvoiceSettings" ColumnName="CanEditCustInvoiceSettings" />
+                <ScalarProperty Name="CanEditLoyaltyPts" ColumnName="CanEditLoyaltyPts" />
+                <ScalarProperty Name="CanSendACustomerEmail" ColumnName="CanSendACustomerEmail" />
+                <ScalarProperty Name="CanEditCustEmail" ColumnName="CanEditCustEmail" />
+                <ScalarProperty Name="CanDeleteCustomers" ColumnName="CanDeleteCustomers" />
+                <ScalarProperty Name="LockDate" ColumnName="LockDate" />
+                <ScalarProperty Name="IsLocked" ColumnName="IsLocked" />
+                <ScalarProperty Name="IsWinUser" ColumnName="IsWinUser" />
+                <ScalarProperty Name="Domain" ColumnName="Domain" />
+                <ScalarProperty Name="LastReset" ColumnName="LastReset" />
+                <ScalarProperty Name="SecretAnswer" ColumnName="SecretAnswer" />
+                <ScalarProperty Name="SecretQuestion" ColumnName="SecretQuestion" />
+                <ScalarProperty Name="UserSalt" ColumnName="UserSalt" />
+                <ScalarProperty Name="UserPassword" ColumnName="UserPassword" />
+                <ScalarProperty Name="UserPIN" ColumnName="UserPIN" />
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="CanIssueVoidCCDebitsCredits" ColumnName="CanIssueVoidCCDebitsCredits" />
+                <ScalarProperty Name="CanMPSBrowse" ColumnName="CanMPSBrowse" />
+                <ScalarProperty Name="CanEditCCOnFile" ColumnName="CanEditCCOnFile" />
+                <ScalarProperty Name="CanSelectPLevelsEditing" ColumnName="CanSelectPLevelsEditing" />
+                <ScalarProperty Name="CanSelectPLevelsInvoicing" ColumnName="CanSelectPLevelsInvoicing" />
+                <ScalarProperty Name="CanAssignCustPLevels" ColumnName="CanAssignCustPLevels" />
+                <ScalarProperty Name="CanAddRemoveGarmentsOnEdit" ColumnName="CanAddRemoveGarmentsOnEdit" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="CanInventoryBillOut" ColumnName="CanInventoryBillOut" />
+                <ScalarProperty Name="EditCustCheckWrite" ColumnName="EditCustCheckWrite" />
+                <ScalarProperty Name="EditCustSalesTax" ColumnName="EditCustSalesTax" />
+                <ScalarProperty Name="CanLowerPricesOnEdit" ColumnName="CanLowerPricesOnEdit" />
+                <ScalarProperty Name="CannotSetupEmail" ColumnName="CannotSetupEmail" />
+                <ScalarProperty Name="CannotDoPhysical" ColumnName="CannotDoPhysical" />
+                <ScalarProperty Name="EmpTimeOut" ColumnName="EmpTimeOut" />
+                <ScalarProperty Name="CannotPrintDrawers" ColumnName="CannotPrintDrawers" />
+                <ScalarProperty Name="CannotPrintTracking" ColumnName="CannotPrintTracking" />
+                <ScalarProperty Name="CannotPrintFinancials" ColumnName="CannotPrintFinancials" />
+                <ScalarProperty Name="CannotPrintSales" ColumnName="CannotPrintSales" />
+                <ScalarProperty Name="CannotPrintEmpLog" ColumnName="CannotPrintEmpLog" />
+                <ScalarProperty Name="CannotPrintManagerRpts" ColumnName="CannotPrintManagerRpts" />
+                <ScalarProperty Name="CannotEditMerchandise" ColumnName="CannotEditMerchandise" />
+                <ScalarProperty Name="CannotEditDiscountsFees" ColumnName="CannotEditDiscountsFees" />
+                <ScalarProperty Name="CannotEditUpcharges" ColumnName="CannotEditUpcharges" />
+                <ScalarProperty Name="CannotEditGarments" ColumnName="CannotEditGarments" />
+                <ScalarProperty Name="CannotEditCategories" ColumnName="CannotEditCategories" />
+                <ScalarProperty Name="CannotEditDepartments" ColumnName="CannotEditDepartments" />
+                <ScalarProperty Name="CannotEditPriceList" ColumnName="CannotEditPriceList" />
+                <ScalarProperty Name="CannotEditEmpCashDrawer" ColumnName="CannotEditEmpCashDrawer" />
+                <ScalarProperty Name="CannotEditEmpAccess" ColumnName="CannotEditEmpAccess" />
+                <ScalarProperty Name="CannotEditTimeCards" ColumnName="CannotEditTimeCards" />
+                <ScalarProperty Name="CannotDeleteEmployees" ColumnName="CannotDeleteEmployees" />
+                <ScalarProperty Name="CannotEditEmployees" ColumnName="CannotEditEmployees" />
+                <ScalarProperty Name="CanEditInvoices" ColumnName="CanEditInvoices" />
+                <ScalarProperty Name="CannotViewTimeCard" ColumnName="CannotViewTimeCard" />
+                <ScalarProperty Name="CannotAddCash" ColumnName="CannotAddCash" />
+                <ScalarProperty Name="CannotDisburseCash" ColumnName="CannotDisburseCash" />
+                <ScalarProperty Name="CannotCashCheck" ColumnName="CannotCashCheck" />
+                <ScalarProperty Name="CannotMakeChange" ColumnName="CannotMakeChange" />
+                <ScalarProperty Name="CannotPrintDrawer" ColumnName="CannotPrintDrawer" />
+                <ScalarProperty Name="CanPrintDailyReport" ColumnName="CanPrintDailyReport" />
+                <ScalarProperty Name="CanAdjustAccounts" ColumnName="CanAdjustAccounts" />
+                <ScalarProperty Name="CannotPrintAudit" ColumnName="CannotPrintAudit" />
+                <ScalarProperty Name="CannotCloseDrawers" ColumnName="CannotCloseDrawers" />
+                <ScalarProperty Name="NoCouponAdj" ColumnName="NoCouponAdj" />
+                <ScalarProperty Name="CanCloseDay" ColumnName="CanCloseDay" />
+                <ScalarProperty Name="CanVoidInvoices" ColumnName="CanVoidInvoices" />
+                <ScalarProperty Name="EditCustDisc" ColumnName="EditCustDisc" />
+                <ScalarProperty Name="PieceRateDryclean" ColumnName="PieceRateDryclean" />
+                <ScalarProperty Name="PieceRateLaundry" ColumnName="PieceRateLaundry" />
+                <ScalarProperty Name="PieceRate" ColumnName="PieceRate" />
+                <ScalarProperty Name="LogTransactions" ColumnName="LogTransactions" />
+                <ScalarProperty Name="CashOutAccounts" ColumnName="CashOutAccounts" />
+                <ScalarProperty Name="EditCustAccData" ColumnName="EditCustAccData" />
+                <ScalarProperty Name="EditInvoicePrices" ColumnName="EditInvoicePrices" />
+                <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+                <ScalarProperty Name="DrawerNumber" ColumnName="DrawerNumber" />
+                <ScalarProperty Name="SecurityLevel" ColumnName="SecurityLevel" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="LastRaise" ColumnName="LastRaise" />
+                <ScalarProperty Name="FullTime" ColumnName="FullTime" />
+                <ScalarProperty Name="SalaryRate" ColumnName="SalaryRate" />
+                <ScalarProperty Name="NoDrawer" ColumnName="NoDrawer" />
+                <ScalarProperty Name="DeniedAccess" ColumnName="DeniedAccess" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="ClocksIn" ColumnName="ClocksIn" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="DrawerStation" ColumnName="DrawerStation" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="True" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="OTS" ZoomLevel="32">
+        <edmx:EntityTypeShape EntityType="Store1Model.Customer" Width="13.25" PointX="2.375" PointY="3.75" Height="11.288798828125" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="Store1Model.Order" Width="1.5" PointX="17.375" PointY="2.25" Height="2.0853483072916665" />
+        <edmx:EntityTypeShape EntityType="Store1Model.Employee" Width="1.5" PointX="5.4441280930508524" PointY="16.822595082606465" />
+      </edmx:Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

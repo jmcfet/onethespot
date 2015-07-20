@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BCSModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Bins" EntityType="BCSModel.Bin" />
+    <EntitySet Name="Categories" EntityType="BCSModel.Category" />
+    <AssociationSet Name="FK_Bins_Categories" Association="BCSModel.FK_Bins_Categories">
+      <End Role="Categories" EntitySet="Categories" />
+      <End Role="Bins" EntitySet="Bins" />
+    </AssociationSet>
+    <EntitySet Name="GSSes" EntityType="BCSModel.GSS" />
+    <EntitySet Name="Printers" EntityType="BCSModel.Printer" />
+    <EntitySet Name="Configurations" EntityType="BCSModel.Configuration" />
+    <EntitySet Name="Items" EntityType="BCSModel.Item" />
+    <AssociationSet Name="FK_Items_Categories" Association="BCSModel.FK_Items_Categories">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Item" EntitySet="Items" />
+    </AssociationSet>
+    <EntitySet Name="QCSInfoes" EntityType="BCSModel.QCSInfo" />
+  </EntityContainer>
+  <EntityType Name="Bin">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="BarCode" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Weight" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="MaxWeight" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Category" Type="Int32" Nullable="false" />
+    <Property Name="PhigidSlot" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="Category1" Relationship="BCSModel.FK_Bins_Categories" FromRole="Bins" ToRole="Categories" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Name="Name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+    <NavigationProperty Name="Bins" Relationship="BCSModel.FK_Bins_Categories" FromRole="Categories" ToRole="Bins" />
+    <NavigationProperty Name="Items" Relationship="BCSModel.FK_Items_Categories" FromRole="Category" ToRole="Item" />
+  </EntityType>
+  <Association Name="FK_Bins_Categories">
+    <End Role="Categories" Type="BCSModel.Category" Multiplicity="1" />
+    <End Role="Bins" Type="BCSModel.Bin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Categories">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Bins">
+        <PropertyRef Name="Category" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="GSS">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="barcode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="bin" Nullable="false" />
+    <Property Type="DateTime" Name="time" Nullable="false" Precision="3" />
+    <Property Type="String" Name="temp" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="temp1" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="temp2" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="String" Name="temp3" MaxLength="10" FixedLength="true" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Printer">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="storename" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="printerName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Configuration">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="POSWindow" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="Int32" Name="ShowPass" />
+  </EntityType>
+  <EntityType Name="Item">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="Int32" Name="CustID" />
+    <Property Type="String" Name="BarCode" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="State" MaxLength="10" FixedLength="true" Unicode="true" />
+    <Property Type="Int32" Name="CatID" />
+    <Property Type="DateTime" Name="CreateDate" Precision="3" />
+    <Property Type="String" Name="Note" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="picture" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Category" Relationship="BCSModel.FK_Items_Categories" FromRole="Item" ToRole="Category" />
+  </EntityType>
+  <Association Name="FK_Items_Categories">
+    <End Type="BCSModel.Category" Role="Category" Multiplicity="0..1" />
+    <End Type="BCSModel.Item" Role="Item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Item">
+        <PropertyRef Name="CatID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="QCSInfo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+    <Property Type="String" Name="HeatSeal" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Type="String" Name="Bin" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Type="DateTime" Name="Time" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

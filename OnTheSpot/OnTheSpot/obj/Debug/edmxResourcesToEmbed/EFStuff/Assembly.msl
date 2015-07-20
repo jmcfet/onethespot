@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2008/09/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AssemblyModelStoreContainer" CdmEntityContainer="AssemblyEntities">
+    <EntitySetMapping Name="Invoices">
+      <EntityTypeMapping TypeName="AssemblyModel.Invoice">
+        <MappingFragment StoreEntitySet="Invoices">
+          <ScalarProperty Name="MarkInEmpID" ColumnName="MarkInEmpID" />
+          <ScalarProperty Name="MarkInDate" ColumnName="MarkInDate" />
+          <ScalarProperty Name="AssemblyDate" ColumnName="AssemblyDate" />
+          <ScalarProperty Name="PayCode" ColumnName="PayCode" />
+          <ScalarProperty Name="BaggerMemo" ColumnName="BaggerMemo" />
+          <ScalarProperty Name="TaxAuthorityID" ColumnName="TaxAuthorityID" />
+          <ScalarProperty Name="IsSplit" ColumnName="IsSplit" />
+          <ScalarProperty Name="IsRedo" ColumnName="IsRedo" />
+          <ScalarProperty Name="OriginalTotal" ColumnName="OriginalTotal" />
+          <ScalarProperty Name="TaxTotal3" ColumnName="TaxTotal3" />
+          <ScalarProperty Name="TaxTotal2" ColumnName="TaxTotal2" />
+          <ScalarProperty Name="TaxTotal1" ColumnName="TaxTotal1" />
+          <ScalarProperty Name="Taxable3" ColumnName="Taxable3" />
+          <ScalarProperty Name="Taxable2" ColumnName="Taxable2" />
+          <ScalarProperty Name="Taxable1" ColumnName="Taxable1" />
+          <ScalarProperty Name="Tax3ID" ColumnName="Tax3ID" />
+          <ScalarProperty Name="Tax2ID" ColumnName="Tax2ID" />
+          <ScalarProperty Name="BillCustomerID" ColumnName="BillCustomerID" />
+          <ScalarProperty Name="ValetTicketID" ColumnName="ValetTicketID" />
+          <ScalarProperty Name="GuestName" ColumnName="GuestName" />
+          <ScalarProperty Name="HotelRoom" ColumnName="HotelRoom" />
+          <ScalarProperty Name="PaymentDate" ColumnName="PaymentDate" />
+          <ScalarProperty Name="SrvFeeTotal" ColumnName="SrvFeeTotal" />
+          <ScalarProperty Name="SrvFeeable" ColumnName="SrvFeeable" />
+          <ScalarProperty Name="CoupDiscable" ColumnName="CoupDiscable" />
+          <ScalarProperty Name="Deleted" ColumnName="Deleted" />
+          <ScalarProperty Name="DiscTotal" ColumnName="DiscTotal" />
+          <ScalarProperty Name="CoupTotal" ColumnName="CoupTotal" />
+          <ScalarProperty Name="PaymentID" ColumnName="PaymentID" />
+          <ScalarProperty Name="PaidAmount" ColumnName="PaidAmount" />
+          <ScalarProperty Name="Total" ColumnName="Total" />
+          <ScalarProperty Name="SubTotal" ColumnName="SubTotal" />
+          <ScalarProperty Name="TaxTotal" ColumnName="TaxTotal" />
+          <ScalarProperty Name="Taxable" ColumnName="Taxable" />
+          <ScalarProperty Name="Tax1ID" ColumnName="Tax1ID" />
+          <ScalarProperty Name="Pieces" ColumnName="Pieces" />
+          <ScalarProperty Name="WorkPhase" ColumnName="WorkPhase" />
+          <ScalarProperty Name="IsMissingAmount" ColumnName="IsMissingAmount" />
+          <ScalarProperty Name="PickupDate" ColumnName="PickupDate" />
+          <ScalarProperty Name="RackDate" ColumnName="RackDate" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="PickupEmpID" ColumnName="PickupEmpID" />
+          <ScalarProperty Name="RackEmpID" ColumnName="RackEmpID" />
+          <ScalarProperty Name="InvoiceEmpID" ColumnName="InvoiceEmpID" />
+          <ScalarProperty Name="LotInfo" ColumnName="LotInfo" />
+          <ScalarProperty Name="Rack" ColumnName="Rack" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="DepartmentID" ColumnName="DepartmentID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="OrderID" ColumnName="OrderID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AutoSorts">
+      <EntityTypeMapping TypeName="AssemblyModel.AutoSort">
+        <MappingFragment StoreEntitySet="AutoSort">
+          <ScalarProperty Name="FlagTag" ColumnName="FlagTag" />
+          <ScalarProperty Name="SubOut" ColumnName="SubOut" />
+          <ScalarProperty Name="UseBAMStorage" ColumnName="UseBAMStorage" />
+          <ScalarProperty Name="BagLabel6" ColumnName="BagLabel6" />
+          <ScalarProperty Name="BagLabel5" ColumnName="BagLabel5" />
+          <ScalarProperty Name="BagLabel4" ColumnName="BagLabel4" />
+          <ScalarProperty Name="BagLabel3" ColumnName="BagLabel3" />
+          <ScalarProperty Name="BagLabel2" ColumnName="BagLabel2" />
+          <ScalarProperty Name="BagLabel1" ColumnName="BagLabel1" />
+          <ScalarProperty Name="BaySection" ColumnName="BaySection" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="DueDate" ColumnName="DueDate" />
+          <ScalarProperty Name="InvoiceDate" ColumnName="InvoiceDate" />
+          <ScalarProperty Name="Remaining" ColumnName="Remaining" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="Queue" ColumnName="Queue" />
+          <ScalarProperty Name="Arm" ColumnName="Arm" />
+          <ScalarProperty Name="RFID" ColumnName="RFID" />
+          <ScalarProperty Name="Customer" ColumnName="Customer" />
+          <ScalarProperty Name="Out" ColumnName="Out" />
+          <ScalarProperty Name="Slot" ColumnName="Slot" />
+          <ScalarProperty Name="Conveyor" ColumnName="Conveyor" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Hung" ColumnName="Hung" />
+          <ScalarProperty Name="OccPercent" ColumnName="OccPercent" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="ArticleCode" ColumnName="ArticleCode" />
+          <ScalarProperty Name="ItemNumber" ColumnName="ItemNumber" />
+          <ScalarProperty Name="PieceTotal" ColumnName="PieceTotal" />
+          <ScalarProperty Name="StoreInvoiceID" ColumnName="StoreInvoiceID" />
+          <ScalarProperty Name="CustomerID" ColumnName="CustomerID" />
+          <ScalarProperty Name="StoreID" ColumnName="StoreID" />
+          <ScalarProperty Name="InvoiceID" ColumnName="InvoiceID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

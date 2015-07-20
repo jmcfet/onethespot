@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BCSModelStoreContainer" CdmEntityContainer="Entities">
+    <EntitySetMapping Name="Bins">
+      <EntityTypeMapping TypeName="BCSModel.Bin">
+        <MappingFragment StoreEntitySet="Bins">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="Weight" ColumnName="Weight" />
+          <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+          <ScalarProperty Name="Category" ColumnName="Category" />
+          <ScalarProperty Name="PhigidSlot" ColumnName="PhigidSlot" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="BCSModel.Category">
+        <MappingFragment StoreEntitySet="Categories">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GSSes">
+      <EntityTypeMapping TypeName="BCSModel.GSS">
+        <MappingFragment StoreEntitySet="GSS">
+          <ScalarProperty Name="temp3" ColumnName="temp3" />
+          <ScalarProperty Name="temp2" ColumnName="temp2" />
+          <ScalarProperty Name="temp1" ColumnName="temp1" />
+          <ScalarProperty Name="temp" ColumnName="temp" />
+          <ScalarProperty Name="time" ColumnName="time" />
+          <ScalarProperty Name="bin" ColumnName="bin" />
+          <ScalarProperty Name="barcode" ColumnName="barcode" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Printers">
+      <EntityTypeMapping TypeName="BCSModel.Printer">
+        <MappingFragment StoreEntitySet="Printers">
+          <ScalarProperty Name="printerName" ColumnName="printerName" />
+          <ScalarProperty Name="storename" ColumnName="storename" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Configurations">
+      <EntityTypeMapping TypeName="BCSModel.Configuration">
+        <MappingFragment StoreEntitySet="Configuration">
+          <ScalarProperty Name="ShowPass" ColumnName="ShowPass" />
+          <ScalarProperty Name="POSWindow" ColumnName="POSWindow" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Items">
+      <EntityTypeMapping TypeName="BCSModel.Item">
+        <MappingFragment StoreEntitySet="Items">
+          <ScalarProperty Name="picture" ColumnName="picture" />
+          <ScalarProperty Name="Note" ColumnName="Note" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="CatID" ColumnName="CatID" />
+          <ScalarProperty Name="State" ColumnName="State" />
+          <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+          <ScalarProperty Name="CustID" ColumnName="CustID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QCSInfoes">
+      <EntityTypeMapping TypeName="BCSModel.QCSInfo">
+        <MappingFragment StoreEntitySet="QCSInfo">
+          <ScalarProperty Name="Time" ColumnName="Time" />
+          <ScalarProperty Name="Bin" ColumnName="Bin" />
+          <ScalarProperty Name="HeatSeal" ColumnName="HeatSeal" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

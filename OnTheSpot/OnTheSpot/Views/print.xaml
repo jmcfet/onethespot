@@ -1,0 +1,50 @@
+﻿<Window x:Class="OnTheSpot.Views.print"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+            Width="304" Height="800">
+    <Window.Resources>
+        <Style x:Key="TextLabel" TargetType="TextBlock" >
+            <Setter Property="Height" Value="24" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="TextAlignment" Value="Center" />
+            <Setter Property="FontSize" Value="15" />
+            <Setter Property="FontWeight" Value="Bold" />
+        </Style>
+    </Window.Resources>
+    <Grid   x:Name="UI">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"></RowDefinition>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="30"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="50"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="Duedate"  Grid.Row="1" Grid.Column="1"  VerticalAlignment="Top" Width="420" Height="50" Style="{StaticResource TextLabel}" FontSize="36" />
+        <TextBlock x:Name="CustomerName"  Style="{StaticResource TextLabel}" Grid.Row="2" Grid.Column="1"   VerticalAlignment="Top" Width="400"/>
+        <TextBlock x:Name="Store" HorizontalAlignment="Center"  Style="{StaticResource TextLabel}" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" Width="400"/>
+        <Border BorderThickness="1"  Grid.Row="4" Grid.Column="1" Width="100"  Height="30" BorderBrush="Black">
+            <TextBlock x:Name="Barcode"    TextAlignment="Center" Height="30" Width="82"/>
+        </Border>
+        <TextBlock  Grid.Row="4" Grid.Column="1"  Text="Failed QC for" Height="Auto" Width="104" Style="{StaticResource TextLabel}" Margin="47.4,31,47,9.4" Grid.RowSpan="2"/>
+        <TextBlock x:Name="reason" Grid.Row="6" Grid.Column="1"  VerticalAlignment="Top" Height="22"  Style="{StaticResource TextLabel}"/>
+        <TextBlock Grid.Row="7" Grid.Column="1" Text="Failed by" VerticalAlignment="Top" Style="{StaticResource TextLabel}"  />
+        <TextBlock x:Name="Name"  Grid.Row="8" Grid.Column="1"  VerticalAlignment="Top" Height="27"  Style="{StaticResource TextLabel}" Text="john hamilthorisvvv"/>
+        <Button x:Name="PrintButton"  Content="print"  Grid.Row="9" Grid.Column="1" VerticalAlignment="Top" Click="Button_Click_1" Height="60" />
+        <TextBlock x:Name="TargetPrinter"  Grid.Column="1" HorizontalAlignment="Left" Margin="179.4,22.2,0,0" Grid.Row="10" TextWrapping="Wrap"  VerticalAlignment="Top" Width="137" Height="20"/>
+    </Grid>
+</Window>

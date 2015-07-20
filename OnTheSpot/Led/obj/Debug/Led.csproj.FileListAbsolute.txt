@@ -1,0 +1,196 @@
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\ResolveAssemblyReference.cache
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.dll
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\HamBone\BCS - Copy\WpfApplication1\Led\bin\Debug\Led.dll
+C:\HamBone\BCS - Copy\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.baml
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\GenerateResource.read.1.tlog
+C:\HamBone\BCS - Copy\WpfApplication1\Led\obj\Debug\GenerateResource.write.1.tlog
+C:\BCS - Copy\WpfApplication1\Led\bin\Debug\Led.dll
+C:\BCS - Copy\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\ResolveAssemblyReference.cache
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.baml
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\GenerateResource.read.1.tlog
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\GenerateResource.write.1.tlog
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.dll
+C:\BCS - Copy\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\BCS\WpfApplication1\Led\bin\Debug\Led.dll
+C:\BCS\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\BCS\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\BCS\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\BCS\WpfApplication1\Led\obj\Debug\Led.baml
+C:\BCS\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\BCS\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\BCS\WpfApplication1\Led\obj\Debug\Led.dll
+C:\BCS\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.dll
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.baml
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.dll
+C:\Users\User\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.dll
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.baml
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.dll
+C:\Users\John\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\HamBone\BCS\WpfApplication1\Led\bin\Debug\Led.dll
+C:\HamBone\BCS\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led.baml
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led.dll
+C:\HamBone\BCS\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\bin\Debug\Led.dll
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.baml
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.dll
+C:\Users\User\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.dll
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.baml
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GenerateResource.read.1.tlog
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GenerateResource.write.1.tlog
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.dll
+C:\Documents and Settings\Admin\My Documents\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\BCSTest\WpfApplication1\Led\bin\Debug\Led.dll
+C:\BCSTest\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\BCSTest\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led.baml
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led.dll
+C:\BCSTest\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\BCS\WpfApplication1\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\bin\Debug\Led.dll
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.baml
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.dll
+C:\Users\John\Dropbox\BCSTest\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.dll
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.baml
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.dll
+C:\Users\admin\Dropbox\BCS\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\GSS\BCS\WpfApplication1\Led\bin\Debug\Led.dll
+C:\GSS\BCS\WpfApplication1\Led\bin\Debug\Led.pdb
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.csprojResolveAssemblyReference.cache
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.g.cs
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.cache
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led_MarkupCompile.lref
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.baml
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.g.resources
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.Properties.Resources.resources
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.dll
+C:\GSS\BCS\WpfApplication1\Led\obj\Debug\Led.pdb
+C:\OnTheSpot\OnTheSpot\Led\bin\Debug\Led.dll
+C:\OnTheSpot\OnTheSpot\Led\bin\Debug\Led.pdb
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.csprojResolveAssemblyReference.cache
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.g.cs
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led_MarkupCompile.cache
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led_MarkupCompile.lref
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.baml
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.g.resources
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.Properties.Resources.resources
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.dll
+C:\OnTheSpot\OnTheSpot\Led\obj\Debug\Led.pdb
+C:\OnTheSpotSource\OnTheSpot\Led\bin\Debug\Led.dll
+C:\OnTheSpotSource\OnTheSpot\Led\bin\Debug\Led.pdb
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.csprojResolveAssemblyReference.cache
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.g.cs
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led_MarkupCompile.cache
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led_MarkupCompile.lref
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.baml
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.g.resources
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.Properties.Resources.resources
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.dll
+C:\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.pdb
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\bin\Debug\Led.dll
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\bin\Debug\Led.pdb
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.csprojResolveAssemblyReference.cache
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.g.cs
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led_MarkupCompile.cache
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led_MarkupCompile.lref
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.baml
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.g.resources
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.Properties.Resources.resources
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.csproj.GenerateResource.Cache
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.dll
+C:\Users\User\Dropbox\OnTheSpotSource\OnTheSpot\Led\obj\Debug\Led.pdb

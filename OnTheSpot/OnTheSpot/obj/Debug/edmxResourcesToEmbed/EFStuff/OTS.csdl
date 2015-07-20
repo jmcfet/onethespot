@@ -1,0 +1,321 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Store1Model" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="Store1Entities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+    <EntitySet Name="Customers" EntityType="Store1Model.Customer" />
+    <EntitySet Name="Orders" EntityType="Store1Model.Order" />
+    <EntitySet Name="Employees" EntityType="Store1Model.Employee" />
+  </EntityContainer>
+  <EntityType Name="Customer">
+    <Key>
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="IsVIP" />
+      <PropertyRef Name="FccMember" />
+      <PropertyRef Name="FccPoints" />
+      <PropertyRef Name="NoChecks" />
+      <PropertyRef Name="CanBill" />
+      <PropertyRef Name="IsTaxExempt" />
+      <PropertyRef Name="BillCycleID" />
+      <PropertyRef Name="AutoDiscount1ID" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="BillToOffice" />
+      <PropertyRef Name="SOFInStore" />
+      <PropertyRef Name="NoHeatseals" />
+      <PropertyRef Name="IsFinCharged" />
+      <PropertyRef Name="BillCenterID" />
+      <PropertyRef Name="CreditLimit" />
+      <PropertyRef Name="PriceListID" />
+      <PropertyRef Name="IsPrintName" />
+      <PropertyRef Name="IsHotel" />
+      <PropertyRef Name="PrintIReminder" />
+      <PropertyRef Name="PrintPackingList" />
+      <PropertyRef Name="IsCompany" />
+      <PropertyRef Name="Language" />
+      <PropertyRef Name="CoupCount" />
+      <PropertyRef Name="Designation" />
+      <PropertyRef Name="TaxAuthorityID" />
+      <PropertyRef Name="InvoicePrintID" />
+      <PropertyRef Name="NoEmailPromos" />
+      <PropertyRef Name="KioskCannotReplaceCard" />
+      <PropertyRef Name="EmailStatements" />
+      <PropertyRef Name="PrintStatements" />
+      <PropertyRef Name="AccountType" />
+      <PropertyRef Name="PriceLevel" />
+      <PropertyRef Name="RequestsNoEmail" />
+      <PropertyRef Name="InvoiceCopies" />
+      <PropertyRef Name="PrintInvoicePrices" />
+      <PropertyRef Name="PrintInvoiceTotals" />
+      <PropertyRef Name="NoPricesOnFirstCopy" />
+      <PropertyRef Name="NoTotalsOnFirstCopy" />
+    </Key>
+    <Property Name="CustomerID" Type="Int32" Nullable="false" />
+    <Property Name="StoreID" Type="Int32" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="FirstName" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Addr1" Type="String" MaxLength="30" Unicode="false" FixedLength="false" />
+    <Property Name="Addr2" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="City" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="State" Type="String" MaxLength="3" Unicode="false" FixedLength="false" />
+    <Property Name="Zip" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="WorkPhone" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="Comment" Type="String" MaxLength="25" Unicode="false" FixedLength="false" />
+    <Property Name="IsVIP" Type="Boolean" Nullable="false" />
+    <Property Name="FccMember" Type="Boolean" Nullable="false" />
+    <Property Name="FccPoints" Type="Int32" Nullable="false" />
+    <Property Name="NoChecks" Type="Boolean" Nullable="false" />
+    <Property Name="CanBill" Type="Boolean" Nullable="false" />
+    <Property Name="ReportCode" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="IsTaxExempt" Type="Boolean" Nullable="false" />
+    <Property Name="Starch" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="Package" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="InvReminder" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="OpenDate" Type="DateTime" Precision="3" />
+    <Property Name="LastOrder" Type="DateTime" Precision="3" />
+    <Property Name="LastCashout" Type="DateTime" Precision="3" />
+    <Property Name="BillCycleID" Type="Int32" Nullable="false" />
+    <Property Name="CashReminder" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="AutoDiscount1ID" Type="Int32" Nullable="false" />
+    <Property Name="Deleted" Type="Boolean" Nullable="false" />
+    <Property Name="BillToOffice" Type="Boolean" Nullable="false" />
+    <Property Name="SOFCardNo" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="SOFExpDate" Type="String" MaxLength="80" Unicode="false" FixedLength="false" />
+    <Property Name="SOFInStore" Type="Boolean" Nullable="false" />
+    <Property Name="SOFBatch" Type="String" MaxLength="1" Unicode="false" FixedLength="false" />
+    <Property Name="EMail" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+    <Property Name="NoHeatseals" Type="Boolean" Nullable="false" />
+    <Property Name="IsFinCharged" Type="Boolean" Nullable="false" />
+    <Property Name="ExtraAccount" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="BillCenterID" Type="Int32" Nullable="false" />
+    <Property Name="CreditLimit" Type="Decimal" Nullable="false" Precision="19" Scale="4" />
+    <Property Name="PriceListID" Type="Int32" Nullable="false" />
+    <Property Name="IsPrintName" Type="Boolean" Nullable="false" />
+    <Property Name="IsHotel" Type="Boolean" Nullable="false" />
+    <Property Name="PrintIReminder" Type="Boolean" Nullable="false" />
+    <Property Name="PrintPackingList" Type="Boolean" Nullable="false" />
+    <Property Name="CellPhone" Type="String" MaxLength="18" Unicode="false" FixedLength="false" />
+    <Property Name="CompanyName" Type="String" MaxLength="40" Unicode="false" FixedLength="false" />
+    <Property Name="IsCompany" Type="Boolean" Nullable="false" />
+    <Property Name="DLNumber" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="Birthday" Type="DateTime" Precision="3" />
+    <Property Name="Language" Type="Int32" Nullable="false" />
+    <Property Name="CoupCount" Type="Int32" Nullable="false" />
+    <Property Name="Designation" Type="Int32" Nullable="false" />
+    <Property Name="LoyaltyID" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+    <Property Name="TaxAuthorityID" Type="Int32" Nullable="false" />
+    <Property Name="InvoicePrintID" Type="Int32" Nullable="false" />
+    <Property Name="NoEmailPromos" Type="Boolean" Nullable="false" />
+    <Property Name="KioskCannotReplaceCard" Type="Boolean" Nullable="false" />
+    <Property Name="EmailStatements" Type="Boolean" Nullable="false" />
+    <Property Name="PrintStatements" Type="Boolean" Nullable="false" />
+    <Property Name="SMSAddress" Type="String" MaxLength="60" Unicode="false" FixedLength="false" />
+    <Property Name="AccountType" Type="Int32" Nullable="false" />
+    <Property Name="PriceLevel" Type="Int32" Nullable="false" />
+    <Property Type="Boolean" Name="RequestsNoEmail" Nullable="false" />
+    <Property Type="String" Name="ReadyEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="StatementEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="PromoEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="RouteEmail" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="DiscExpiration" Precision="3" />
+    <Property Type="String" Name="BillLastName" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BillFirstName" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BillAddr1" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BillAddr2" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BillCity" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BillState" MaxLength="3" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="BillZip" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="Notes" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="InvoiceCopies" Nullable="false" />
+    <Property Type="Boolean" Name="PrintInvoicePrices" Nullable="false" />
+    <Property Type="Boolean" Name="PrintInvoiceTotals" Nullable="false" />
+    <Property Type="Boolean" Name="NoPricesOnFirstCopy" Nullable="false" />
+    <Property Type="Boolean" Name="NoTotalsOnFirstCopy" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Order">
+    <Key>
+      <PropertyRef Name="OrderID" />
+      <PropertyRef Name="StoreID" />
+      <PropertyRef Name="CustomerID" />
+      <PropertyRef Name="EmployeeID" />
+      <PropertyRef Name="IsFulFilled" />
+      <PropertyRef Name="Deleted" />
+    </Key>
+    <Property Type="Int32" Name="OrderID" Nullable="false" />
+    <Property Type="Int32" Name="StoreID" Nullable="false" />
+    <Property Type="Int32" Name="CustomerID" Nullable="false" />
+    <Property Type="Int32" Name="EmployeeID" Nullable="false" />
+    <Property Type="DateTime" Name="OrderDate" Precision="3" />
+    <Property Type="Boolean" Name="IsFulFilled" Nullable="false" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Employee">
+    <Key>
+      <PropertyRef Name="ClocksIn" />
+      <PropertyRef Name="DeniedAccess" />
+      <PropertyRef Name="NoDrawer" />
+      <PropertyRef Name="FullTime" />
+      <PropertyRef Name="Deleted" />
+      <PropertyRef Name="EditInvoicePrices" />
+      <PropertyRef Name="EditCustAccData" />
+      <PropertyRef Name="CashOutAccounts" />
+      <PropertyRef Name="LogTransactions" />
+      <PropertyRef Name="EditCustDisc" />
+      <PropertyRef Name="CanVoidInvoices" />
+      <PropertyRef Name="CanCloseDay" />
+      <PropertyRef Name="NoCouponAdj" />
+      <PropertyRef Name="CannotCloseDrawers" />
+      <PropertyRef Name="CannotPrintAudit" />
+      <PropertyRef Name="CanAdjustAccounts" />
+      <PropertyRef Name="CanPrintDailyReport" />
+      <PropertyRef Name="CannotPrintDrawer" />
+      <PropertyRef Name="CannotMakeChange" />
+      <PropertyRef Name="CannotCashCheck" />
+      <PropertyRef Name="CannotDisburseCash" />
+      <PropertyRef Name="CannotAddCash" />
+      <PropertyRef Name="CannotViewTimeCard" />
+      <PropertyRef Name="CanEditInvoices" />
+      <PropertyRef Name="CannotEditEmployees" />
+      <PropertyRef Name="CannotDeleteEmployees" />
+      <PropertyRef Name="CannotEditTimeCards" />
+      <PropertyRef Name="CannotEditEmpAccess" />
+      <PropertyRef Name="CannotEditEmpCashDrawer" />
+      <PropertyRef Name="CannotEditPriceList" />
+      <PropertyRef Name="CannotEditDepartments" />
+      <PropertyRef Name="CannotEditCategories" />
+      <PropertyRef Name="CannotEditGarments" />
+      <PropertyRef Name="CannotEditUpcharges" />
+      <PropertyRef Name="CannotEditDiscountsFees" />
+      <PropertyRef Name="CannotEditMerchandise" />
+      <PropertyRef Name="CannotPrintManagerRpts" />
+      <PropertyRef Name="CannotPrintEmpLog" />
+      <PropertyRef Name="CannotPrintSales" />
+      <PropertyRef Name="CannotPrintFinancials" />
+      <PropertyRef Name="CannotPrintTracking" />
+      <PropertyRef Name="CannotPrintDrawers" />
+      <PropertyRef Name="EmpTimeOut" />
+      <PropertyRef Name="CannotDoPhysical" />
+      <PropertyRef Name="CannotSetupEmail" />
+      <PropertyRef Name="CanLowerPricesOnEdit" />
+      <PropertyRef Name="EditCustSalesTax" />
+      <PropertyRef Name="EditCustCheckWrite" />
+      <PropertyRef Name="CanInventoryBillOut" />
+      <PropertyRef Name="CanAddRemoveGarmentsOnEdit" />
+      <PropertyRef Name="CanAssignCustPLevels" />
+      <PropertyRef Name="CanSelectPLevelsInvoicing" />
+      <PropertyRef Name="CanSelectPLevelsEditing" />
+      <PropertyRef Name="CanEditCCOnFile" />
+      <PropertyRef Name="CanMPSBrowse" />
+      <PropertyRef Name="CanIssueVoidCCDebitsCredits" />
+      <PropertyRef Name="IsWinUser" />
+      <PropertyRef Name="IsLocked" />
+      <PropertyRef Name="CanDeleteCustomers" />
+      <PropertyRef Name="CanEditCustEmail" />
+      <PropertyRef Name="CanSendACustomerEmail" />
+      <PropertyRef Name="CanEditLoyaltyPts" />
+      <PropertyRef Name="CanEditCustInvoiceSettings" />
+      <PropertyRef Name="CanViewCustActivity" />
+      <PropertyRef Name="CanIssueAwardCards" />
+      <PropertyRef Name="CanReloadAwardCards" />
+      <PropertyRef Name="CanReloadPurchaseCards" />
+      <PropertyRef Name="CanVoidGiftTransactions" />
+      <PropertyRef Name="CannotViewLocations" />
+      <PropertyRef Name="CanAddGarmentsOnEdit" />
+      <PropertyRef Name="CanRemoveGarmentsOnEdit" />
+    </Key>
+    <Property Type="Int32" Name="EmployeeID" />
+    <Property Type="Int32" Name="DrawerStation" />
+    <Property Type="String" Name="LastName" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="FirstName" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="ClocksIn" Nullable="false" />
+    <Property Type="String" Name="Password" MaxLength="8" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="DeniedAccess" Nullable="false" />
+    <Property Type="Boolean" Name="NoDrawer" Nullable="false" />
+    <Property Type="Decimal" Name="SalaryRate" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="FullTime" Nullable="false" />
+    <Property Type="DateTime" Name="LastRaise" Precision="3" />
+    <Property Type="String" Name="Department" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="SecurityLevel" />
+    <Property Type="Int32" Name="DrawerNumber" />
+    <Property Type="Boolean" Name="Deleted" Nullable="false" />
+    <Property Type="Boolean" Name="EditInvoicePrices" Nullable="false" />
+    <Property Type="Boolean" Name="EditCustAccData" Nullable="false" />
+    <Property Type="Boolean" Name="CashOutAccounts" Nullable="false" />
+    <Property Type="Boolean" Name="LogTransactions" Nullable="false" />
+    <Property Type="Decimal" Name="PieceRate" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PieceRateLaundry" Precision="19" Scale="4" />
+    <Property Type="Decimal" Name="PieceRateDryclean" Precision="19" Scale="4" />
+    <Property Type="Boolean" Name="EditCustDisc" Nullable="false" />
+    <Property Type="Boolean" Name="CanVoidInvoices" Nullable="false" />
+    <Property Type="Boolean" Name="CanCloseDay" Nullable="false" />
+    <Property Type="Boolean" Name="NoCouponAdj" Nullable="false" />
+    <Property Type="Boolean" Name="CannotCloseDrawers" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintAudit" Nullable="false" />
+    <Property Type="Boolean" Name="CanAdjustAccounts" Nullable="false" />
+    <Property Type="Boolean" Name="CanPrintDailyReport" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintDrawer" Nullable="false" />
+    <Property Type="Boolean" Name="CannotMakeChange" Nullable="false" />
+    <Property Type="Boolean" Name="CannotCashCheck" Nullable="false" />
+    <Property Type="Boolean" Name="CannotDisburseCash" Nullable="false" />
+    <Property Type="Boolean" Name="CannotAddCash" Nullable="false" />
+    <Property Type="Boolean" Name="CannotViewTimeCard" Nullable="false" />
+    <Property Type="Boolean" Name="CanEditInvoices" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditEmployees" Nullable="false" />
+    <Property Type="Boolean" Name="CannotDeleteEmployees" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditTimeCards" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditEmpAccess" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditEmpCashDrawer" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditPriceList" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditDepartments" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditCategories" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditGarments" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditUpcharges" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditDiscountsFees" Nullable="false" />
+    <Property Type="Boolean" Name="CannotEditMerchandise" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintManagerRpts" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintEmpLog" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintSales" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintFinancials" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintTracking" Nullable="false" />
+    <Property Type="Boolean" Name="CannotPrintDrawers" Nullable="false" />
+    <Property Type="Int32" Name="EmpTimeOut" Nullable="false" />
+    <Property Type="Boolean" Name="CannotDoPhysical" Nullable="false" />
+    <Property Type="Boolean" Name="CannotSetupEmail" Nullable="false" />
+    <Property Type="Boolean" Name="CanLowerPricesOnEdit" Nullable="false" />
+    <Property Type="Boolean" Name="EditCustSalesTax" Nullable="false" />
+    <Property Type="Boolean" Name="EditCustCheckWrite" Nullable="false" />
+    <Property Type="Boolean" Name="CanInventoryBillOut" Nullable="false" />
+    <Property Type="String" Name="Email" MaxLength="80" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="CanAddRemoveGarmentsOnEdit" Nullable="false" />
+    <Property Type="Boolean" Name="CanAssignCustPLevels" Nullable="false" />
+    <Property Type="Boolean" Name="CanSelectPLevelsInvoicing" Nullable="false" />
+    <Property Type="Boolean" Name="CanSelectPLevelsEditing" Nullable="false" />
+    <Property Type="Boolean" Name="CanEditCCOnFile" Nullable="false" />
+    <Property Type="Boolean" Name="CanMPSBrowse" Nullable="false" />
+    <Property Type="Boolean" Name="CanIssueVoidCCDebitsCredits" Nullable="false" />
+    <Property Type="String" Name="UserName" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserPIN" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserPassword" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="UserSalt" MaxLength="16" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SecretQuestion" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="SecretAnswer" MaxLength="32" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="LastReset" Precision="3" />
+    <Property Type="String" Name="Domain" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="IsWinUser" Nullable="false" />
+    <Property Type="Boolean" Name="IsLocked" Nullable="false" />
+    <Property Type="DateTime" Name="LockDate" Precision="3" />
+    <Property Type="Boolean" Name="CanDeleteCustomers" Nullable="false" />
+    <Property Type="Boolean" Name="CanEditCustEmail" Nullable="false" />
+    <Property Type="Boolean" Name="CanSendACustomerEmail" Nullable="false" />
+    <Property Type="Boolean" Name="CanEditLoyaltyPts" Nullable="false" />
+    <Property Type="Boolean" Name="CanEditCustInvoiceSettings" Nullable="false" />
+    <Property Type="Boolean" Name="CanViewCustActivity" Nullable="false" />
+    <Property Type="Boolean" Name="CanIssueAwardCards" Nullable="false" />
+    <Property Type="Boolean" Name="CanReloadAwardCards" Nullable="false" />
+    <Property Type="Boolean" Name="CanReloadPurchaseCards" Nullable="false" />
+    <Property Type="Boolean" Name="CanVoidGiftTransactions" Nullable="false" />
+    <Property Type="DateTime" Name="EarliestClockin" Precision="3" />
+    <Property Type="Boolean" Name="CannotViewLocations" Nullable="false" />
+    <Property Type="Boolean" Name="CanAddGarmentsOnEdit" Nullable="false" />
+    <Property Type="Boolean" Name="CanRemoveGarmentsOnEdit" Nullable="false" />
+  </EntityType>
+</Schema>

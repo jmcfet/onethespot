@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="BCSModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="BCSModelStoreContainer">
+          <EntitySet Name="Bins" EntityType="BCSModel.Store.Bins" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Categories" EntityType="BCSModel.Store.Categories" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Configuration" EntityType="BCSModel.Store.Configuration" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="GSS" EntityType="BCSModel.Store.GSS" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Items" EntityType="BCSModel.Store.Items" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Printers" EntityType="BCSModel.Store.Printers" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="QCSInfo" EntityType="BCSModel.Store.QCSInfo" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="FK_Bins_Categories" Association="BCSModel.Store.FK_Bins_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Bins" EntitySet="Bins" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Items_Categories" Association="BCSModel.Store.FK_Items_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Items" EntitySet="Items" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Bins">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="BarCode" Type="nvarchar(max)" />
+          <Property Name="Weight" Type="nvarchar(max)" />
+          <Property Name="MaxWeight" Type="nvarchar(max)" />
+          <Property Name="Category" Type="int" Nullable="false" />
+          <Property Name="PhigidSlot" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Categories">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="nvarchar(max)" />
+          <Property Name="Description" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Configuration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="POSWindow" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="ShowPass" Type="int" />
+        </EntityType>
+        <EntityType Name="GSS">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="barcode" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="bin" Type="int" Nullable="false" />
+          <Property Name="time" Type="datetime" Nullable="false" />
+          <Property Name="temp" Type="nchar" MaxLength="10" />
+          <Property Name="temp1" Type="nchar" MaxLength="10" />
+          <Property Name="temp2" Type="nchar" MaxLength="10" />
+          <Property Name="temp3" Type="nchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="Items">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="CustID" Type="int" />
+          <Property Name="BarCode" Type="nvarchar" MaxLength="50" />
+          <Property Name="State" Type="nchar" MaxLength="10" />
+          <Property Name="CatID" Type="int" />
+          <Property Name="CreateDate" Type="datetime" />
+          <Property Name="Note" Type="nvarchar(max)" />
+          <Property Name="picture" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Printers">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="storename" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="printerName" Type="nvarchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="QCSInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="HeatSeal" Type="nvarchar" Nullable="false" MaxLength="20" />
+          <Property Name="Bin" Type="nvarchar" Nullable="false" MaxLength="50" />
+          <Property Name="Time" Type="datetime" Nullable="false" />
+        </EntityType>
+        <Association Name="FK_Bins_Categories">
+          <End Role="Categories" Type="BCSModel.Store.Categories" Multiplicity="1" />
+          <End Role="Bins" Type="BCSModel.Store.Bins" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Bins">
+              <PropertyRef Name="Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Items_Categories">
+          <End Role="Categories" Type="BCSModel.Store.Categories" Multiplicity="0..1" />
+          <End Role="Items" Type="BCSModel.Store.Items" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Items">
+              <PropertyRef Name="CatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="BCSModel" Alias="Self" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="Entities" annotation:LazyLoadingEnabled="true" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+          <EntitySet Name="Bins" EntityType="BCSModel.Bin" />
+          <EntitySet Name="Categories" EntityType="BCSModel.Category" />
+          <AssociationSet Name="FK_Bins_Categories" Association="BCSModel.FK_Bins_Categories">
+            <End Role="Categories" EntitySet="Categories" />
+            <End Role="Bins" EntitySet="Bins" />
+          </AssociationSet>
+          <EntitySet Name="GSSes" EntityType="BCSModel.GSS" />
+          <EntitySet Name="Printers" EntityType="BCSModel.Printer" />
+          <EntitySet Name="Configurations" EntityType="BCSModel.Configuration" />
+          <EntitySet Name="Items" EntityType="BCSModel.Item" />
+          <AssociationSet Name="FK_Items_Categories" Association="BCSModel.FK_Items_Categories">
+            <End Role="Category" EntitySet="Categories" />
+            <End Role="Item" EntitySet="Items" />
+          </AssociationSet>
+          <EntitySet Name="QCSInfoes" EntityType="BCSModel.QCSInfo" />
+        </EntityContainer>
+        <EntityType Name="Bin">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="BarCode" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Weight" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="MaxWeight" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Category" Type="Int32" Nullable="false" />
+          <Property Name="PhigidSlot" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="Category1" Relationship="BCSModel.FK_Bins_Categories" FromRole="Bins" ToRole="Categories" />
+        </EntityType>
+        <EntityType Name="Category">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Name="Name" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" Unicode="true" FixedLength="false" />
+          <NavigationProperty Name="Bins" Relationship="BCSModel.FK_Bins_Categories" FromRole="Categories" ToRole="Bins" />
+          <NavigationProperty Name="Items" Relationship="BCSModel.FK_Items_Categories" FromRole="Category" ToRole="Item" />
+        </EntityType>
+        <Association Name="FK_Bins_Categories">
+          <End Role="Categories" Type="BCSModel.Category" Multiplicity="1" />
+          <End Role="Bins" Type="BCSModel.Bin" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Categories">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Bins">
+              <PropertyRef Name="Category" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="GSS">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="barcode" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="bin" Nullable="false" />
+          <Property Type="DateTime" Name="time" Nullable="false" Precision="3" />
+          <Property Type="String" Name="temp" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="temp1" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="temp2" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="String" Name="temp3" MaxLength="10" FixedLength="true" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Printer">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="storename" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="printerName" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Configuration">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Type="Int32" Name="Id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="POSWindow" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="Int32" Name="ShowPass" />
+        </EntityType>
+        <EntityType Name="Item">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Type="Int32" Name="ID" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="Int32" Name="CustID" />
+          <Property Type="String" Name="BarCode" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="State" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Type="Int32" Name="CatID" />
+          <Property Type="DateTime" Name="CreateDate" Precision="3" />
+          <Property Type="String" Name="Note" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="picture" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Category" Relationship="BCSModel.FK_Items_Categories" FromRole="Item" ToRole="Category" />
+        </EntityType>
+        <Association Name="FK_Items_Categories">
+          <End Type="BCSModel.Category" Role="Category" Multiplicity="0..1" />
+          <End Type="BCSModel.Item" Role="Item" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Category">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Item">
+              <PropertyRef Name="CatID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="QCSInfo">
+          <Key>
+            <PropertyRef Name="id" />
+          </Key>
+          <Property Type="Int32" Name="id" Nullable="false" a:StoreGeneratedPattern="Identity" xmlns:a="http://schemas.microsoft.com/ado/2009/02/edm/annotation" />
+          <Property Type="String" Name="HeatSeal" Nullable="false" MaxLength="20" FixedLength="false" Unicode="true" />
+          <Property Type="String" Name="Bin" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Type="DateTime" Name="Time" Nullable="false" Precision="3" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="BCSModelStoreContainer" CdmEntityContainer="Entities">
+          <EntitySetMapping Name="Bins">
+            <EntityTypeMapping TypeName="BCSModel.Bin">
+              <MappingFragment StoreEntitySet="Bins">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+                <ScalarProperty Name="Weight" ColumnName="Weight" />
+                <ScalarProperty Name="MaxWeight" ColumnName="MaxWeight" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="PhigidSlot" ColumnName="PhigidSlot" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Categories">
+            <EntityTypeMapping TypeName="BCSModel.Category">
+              <MappingFragment StoreEntitySet="Categories">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Name" ColumnName="Name" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="GSSes">
+            <EntityTypeMapping TypeName="BCSModel.GSS">
+              <MappingFragment StoreEntitySet="GSS">
+                <ScalarProperty Name="temp3" ColumnName="temp3" />
+                <ScalarProperty Name="temp2" ColumnName="temp2" />
+                <ScalarProperty Name="temp1" ColumnName="temp1" />
+                <ScalarProperty Name="temp" ColumnName="temp" />
+                <ScalarProperty Name="time" ColumnName="time" />
+                <ScalarProperty Name="bin" ColumnName="bin" />
+                <ScalarProperty Name="barcode" ColumnName="barcode" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Printers">
+            <EntityTypeMapping TypeName="BCSModel.Printer">
+              <MappingFragment StoreEntitySet="Printers">
+                <ScalarProperty Name="printerName" ColumnName="printerName" />
+                <ScalarProperty Name="storename" ColumnName="storename" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Configurations">
+            <EntityTypeMapping TypeName="BCSModel.Configuration">
+              <MappingFragment StoreEntitySet="Configuration">
+                <ScalarProperty Name="ShowPass" ColumnName="ShowPass" />
+                <ScalarProperty Name="POSWindow" ColumnName="POSWindow" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Items">
+            <EntityTypeMapping TypeName="BCSModel.Item">
+              <MappingFragment StoreEntitySet="Items">
+                <ScalarProperty Name="picture" ColumnName="picture" />
+                <ScalarProperty Name="Note" ColumnName="Note" />
+                <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+                <ScalarProperty Name="CatID" ColumnName="CatID" />
+                <ScalarProperty Name="State" ColumnName="State" />
+                <ScalarProperty Name="BarCode" ColumnName="BarCode" />
+                <ScalarProperty Name="CustID" ColumnName="CustID" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="QCSInfoes">
+            <EntityTypeMapping TypeName="BCSModel.QCSInfo">
+              <MappingFragment StoreEntitySet="QCSInfo">
+                <ScalarProperty Name="Time" ColumnName="Time" />
+                <ScalarProperty Name="Bin" ColumnName="Bin" />
+                <ScalarProperty Name="HeatSeal" ColumnName="HeatSeal" />
+                <ScalarProperty Name="id" ColumnName="id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer>
+    <edmx:Connection>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <edmx:DesignerInfoPropertySet>
+        <edmx:DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <edmx:DesignerProperty Name="EnablePluralization" Value="True" />
+        <edmx:DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+      </edmx:DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <edmx:Diagram Name="BCS" ZoomLevel="93">
+        <edmx:EntityTypeShape EntityType="BCSModel.Bin" Width="1.5" PointX="3" PointY="1.125" Height="2.3648893229166674" IsExpanded="true" />
+        <edmx:EntityTypeShape EntityType="BCSModel.Category" Width="1.5" PointX="0.75" PointY="2.75" Height="1.9802864583333335" IsExpanded="true" />
+        <edmx:AssociationConnector Association="BCSModel.FK_Bins_Categories" ManuallyRouted="false">
+          <edmx:ConnectorPoint PointX="2.25" PointY="3.1199446614583337" />
+          <edmx:ConnectorPoint PointX="3" PointY="3.1199446614583337" />
+        </edmx:AssociationConnector>
+        <edmx:EntityTypeShape EntityType="BCSModel.GSS" Width="1.625" PointX="5.75" PointY="2.875" />
+        <edmx:EntityTypeShape EntityType="BCSModel.Printer" Width="1.5" PointX="5.5" PointY="5.75" />
+        <edmx:EntityTypeShape EntityType="BCSModel.Configuration" Width="1.5" PointX="6.39642084501517" PointY="19.645502010195283" />
+        <edmx:EntityTypeShape EntityType="BCSModel.Item" Width="1.5" PointX="2.5184182294264521" PointY="28.844495995363452" />
+        <edmx:AssociationConnector Association="BCSModel.FK_Items_Categories" />
+        <edmx:EntityTypeShape EntityType="BCSModel.QCSInfo" Width="1.5" PointX="5.2021709853793361" PointY="26.515879241058546" />
+      </edmx:Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
